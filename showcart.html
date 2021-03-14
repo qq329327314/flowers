@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>花礼网购物车页面</title>
+		<link rel="stylesheet" type="text/css" href="css/showcart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	</head>
+	<body>
+		<!-- 头部 start -->
+		<header class="common_head_box">
+		    <div class="head_box container clearfix">
+		        <!-- lt_nav -->
+		        <ul class="lt_nav clearfix">
+		            <li>
+		                <a href="#"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+		            </li>
+		            <li>
+		                <a href="#"><span class="head_icon"></span>关注微信</a>
+		                <div class="menu">
+		                    <img src="images/login_wxguanjia_qrcode.png" alt="">
+		                    <p>
+		                        扫码关注<br>
+		                        回复“礼物”更多惊喜
+		                    </p>
+		                </div>
+		            </li>
+		            <li>
+		                <a href="#"><span class="head_icon"></span>花礼网app</a>
+		                <div class="menu">
+		                    <img src="images/login_download_qrcode.png" alt="">
+		                    <p>新人专属100元APP礼包</p>
+		                </div>
+		            </li>
+		        </ul>
+		        <!-- rt_nav -->
+		        <ul class="rt_nav clearfix">
+		            <li>
+		                <a href="login.html" class="login">您好，请登录</a>
+		                <a href="enroll.html" class="register">注册</a>
+		            </li>
+		            <li class="line">|</li>
+		            <li>
+		                <a href="serve.html">订单查询</a>
+		            </li>
+		            <li class="line">|</li>
+		            <li>
+		                <a href="">我的花礼</a>
+		            </li>
+		            <li class="line">|</li>
+		            <li class="customer_service">
+		                <a href="">客户服务<span class="triangle_icon"></span></a>
+		                <ul class="service_list">
+		                    <li><a>在线付款</a></li>
+		                    <li><a>帮助中心</a></li>
+		                    <li><a>售后服务</a></li>
+		                    <li><a>配送范围</a></li>
+		                    <li><a>留言反馈</a></li>
+		                </ul>
+		            </li>
+		            <li class="line">|</li>
+		            <li class="shop_cart">
+		                <a href="" class="shop_cart_link">购物车</a>
+		                <!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+		                <ul class="empty_shop_list">
+		                    <li class="empty">您的购物车中没有商品，先去选购把！</li>
+		                </ul>
+		                <!-- 购物车有内容时显示的列表 -->
+		                <ul class="shop_list">
+		                   
+		                    <li class="settlement">
+		                        <span class="shop_count">1</span>件总计:<span class="total_price">￥239</span>
+		                        <a href="#" class="goto_settlement rt">去购物车结算</a>
+		                    </li>
+		                </ul>
+		            </li>
+		            <li class="line">|</li>
+		            <li>
+		                <a href="">中国鲜花礼品网：中国鲜花网领先品牌</a>
+		            </li>
+		        </ul>
+		    </div>
+		
+		</header>
+		<!-- 头部 end -->
+		
+		
+		<!-- 搜索区 start -->
+		<section class="common_search_box container">
+		    <a href="index.html" class="huali_logo lt">
+		        <img src="images/pc_hualogo.png" alt="">
+		    </a>
+		
+		    <div class="rt_consult_box rt">
+		        <span class="phone_consult"></span>
+		        400-889-8188
+		        <em class="line">|</em>
+		        <a href="" class="on_line_service">
+		            <i class="icon"></i>
+		            在线客服
+		        </a>
+		    </div>
+		</section>
+		<!-- 搜索区 end -->
+		
+		<section class="section">
+			<!-- 空页面 -->
+			<div id="empty">
+				<img src="images/Showchat/Showchat_gwc_k2.jpg" alt="">
+			</div>
+			<!-- 购物车 -->
+			<div class="cartPanel">
+				<ul class="panelTitle clear">
+						<li class="goodsName">商品名称</li>
+						<li>市场价</li>
+						<li>订购价(8折)</li>
+						<li>数量</li>
+						<li>操作</li>
+					</ul>
+				<ul class="bd">
+				</ul>
+			</div>
+			<!-- 结算栏 -->
+			<div class="checkout clear">
+				<div class="checkoutHandle">
+					<div class="checkoutLeft">
+						<i></i><a href="index.html">继续挑选</a>
+					</div>
+					<div class="checkoutRight">
+						应付金额:<span class="allHandle"></span>
+					</div>
+				</div>
+				<button class="checkoutBtn">去结算</button>
+			</div>
+			<!-- 商品列表 -->
+			<div class="goodsList">
+				<div class="listTitle clear">
+					<div class="goodsTitleBtn clickBtn">
+						<a>购买该商品的还购买了</a>
+					</div>
+					<div class="goodsTitleBtn">
+						<a>巧克力/花瓶</a>
+					</div>
+				</div>
+				<div class="listContent clear">
+					<i class="prev"></i>
+					<div class="goodsPane">
+						<ul class="panelist clear">
+						</ul>
+						<ul class="panelist clear" style="display: none;">
+						</ul>
+					</div>
+					<i class="next"></i>
+				</div>
+			</div>
+		</section>
+		<!-- 底部 start -->
+		<footer class="common_footer_box container">
+		    <div class="options">
+		        <a href="index.html">首页</a>|
+		        <a href="">关于我们</a>|
+		        <a href="">媒体报道</a>|
+		        <a href="">联系方式</a>|
+		        <a href="">企业团购</a>|
+		        <a href="">花店入驻</a>|
+		        <a href="">友情链接</a>|
+		        <a href="">在线补款</a>|
+		        <a href="">为什么选择中国鲜花礼品网</a>
+		    </div>
+		    <div class="ft_logo">
+		        <img src="images/slogan.png" alt="">
+		        <img src="images/100.jpg" alt="">
+		        <img src="images/bico1.jpg" alt="">
+		        <img src="images/govIcon.gif" alt="" height="50px">
+		    </div>
+		    <div class="permit">
+		        <p>
+		            <a href="">中国花卉协会会员</a>
+		            <a href="">中国电子商务协会会员</a>
+		            ICP经营许可证：
+		            <a href="">粤B2-20050744</a> |
+		            <a href="">粤ICP备09171662号</a>
+		            粤公网安备44030502000373号 Copyright © 2005-2021
+		        </p>
+		        <p>
+		            花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+		        </p>
+		    </div>
+		</footer>
+		<!-- 底部 end -->
+		<br>
+	</body>
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/showchart.js"></script>
+	<script src="js/data.js"></script>
+</html>

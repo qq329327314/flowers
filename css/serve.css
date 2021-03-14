@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #7E7E80;
+}
+.fixclear::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+/* 位置顺序 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container .breadcrumbs{
+    /* background: pink; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.breadcrumbs>a{
+    color: #7E7E80;
+    font-size: 14px;
+}
+/* 左侧导航 */
+.pull-left{
+    width: 230px;
+    height:100%;
+    /* background: greenyellow; */
+    float: left;
+    border: 1px solid #D9D9D9;
+    position: relative;
+}
+.logo-green{
+    display: inline-block;
+    height:50px;
+    width: 54px;
+    background: url(../images/login_title_bg.png) no-repeat;
+    position: absolute;
+    left: -10px;
+    top: 15px;
+}
+dl{
+    text-align: center;
+    height: 100%;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 15px;
+    cursor: pointer
+}
+dd{
+    display: none;
+}
+dl:hover{
+    background: rgb(227, 229, 250);
+}
+dl>dd>a{
+    margin-top: 5px;
+    font-size: 13px;
+    color: #7E7E80;
+}
+.hd{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #585657;
+    height: 40px;
+    line-height: 40px;
+    background: #D6F188;
+    margin-top: 15px;
+    text-align: center;
+}
+.issue{
+    display: inline-block;
+    height: 13px;
+    width: 11px;
+    background: url(../images/login_common_z.png) no-repeat -369px -245px;
+}
+.indent-logo{
+    display: inline-block;
+    height: 20px;
+    width: 16px;
+    background: url(../images/login_common_z.png) no-repeat -201px -150px; 
+}
+.service-logo{
+    display: inline-block;
+    height: 20px;
+    width: 16px;
+    background: url(../images/login_common_z.png) no-repeat -248px -199px; 
+}
+.gift-logo{
+    display: inline-block;
+    height: 20px;
+    width: 16px;
+    background: url(../images/login_common_z.png) no-repeat -332px -237px; 
+}
+.aim-logo{
+    display: inline-block;
+    height: 20px;
+    width: 16px;
+    background: url(../images/login_common_z.png) no-repeat -5px -284px; 
+}
+.distribution-logo{
+    display: inline-block;
+    height: 20px;
+    width: 16px;
+    background: url(../images/login_common_z.png) no-repeat -246px -256px;
+}
+dl>dd>a:hover{
+    color: #FF6A00;
+    text-decoration:underline;
+}
+dt>a{
+ font-weight: bold;
+ color: #5a5959;
+}
+dt>a:hover{
+    color: #FF6A00;
+    text-decoration:underline; 
+}
+
+/* 订单 */
+.indent{
+    /* background: rgb(145, 211, 150); */
+    width: 925px;
+    height: 1000px;
+    float: right;
+    border: 1px solid  #acacac;
+}
+.indent .line{
+    border-bottom: 3px #D9D9D9 solid;
+   width: 800px;
+   padding: 10px;
+   margin-left: 50px;
+}
+.eng{
+    text-align: center;
+    margin-top: 10px;
+    color: #7E7E80;
+    font-size: 30px;
+}
+.hz{
+    text-align: center;
+    margin-top: 10px;
+    color: #7E7E80;
+    font-size: 20px;
+    font-weight: bold;
+}
+.poBox{
+    width: 780px;
+    height: 100%;
+    /* text-align: center; */
+    border: 1px solid #7E7E80;
+    /* text-align: center; */
+    font-size: 12px;
+    color:  #b1b1b3;
+}
+.fromBox{
+    margin-left: 74px;
+    margin-top: 20px;
+}
+.topCols{
+    border-bottom: 1px solid  #7E7E80;
+    border-bottom: 1px solid  #7E7E80;
+    line-height: 30px;
+    background: #e6e4e4;
+    text-align: center;
+}
+.boxLeft{
+    border-bottom: 1px solid  #7E7E80;
+    width: 180px;
+    height: 31px; 
+    display: inline-block;
+    border-right: solid 1px #7E7E80;
+    text-align: right;
+  line-height: 31px;
+}
+.boxRight{
+    border-bottom: 1px solid  #7E7E80;
+    display: inline-block;
+    height: 31px;
+    width: 599px;
+   line-height: 31px;
+  
+}
+.dian{
+    color: #fff;
+}
+/* 验证码 */
+.boxRight-3{
+    border-bottom: 1px solid  #7E7E80;
+    display: inline-block;
+    height: 31px;
+    width: 599px;
+   line-height: 31px;
+  background: url(../images/login-number.jpg) no-repeat 127px 0px;
+  background-size: 100px;
+}
+.boxRight-3>input{
+    height: 25px;
+    margin-left: 5px;
+    width: 120px;
+    color:#8f8c8c;
+    border: 1px solid #a8a8a8;
+}
+.boxRight input{
+   height: 25px;
+    margin-left: 5px;
+    width: 200px;
+    color:#8f8c8c ;
+    border: 1px solid #a8a8a8;
+}
+.boxRight .red1{
+    color: #CC0000;
+    text-decoration: underline;
+}
+.boxRight .red{
+    color: #CC0000;
+}
+.boxRight .red-1{
+    color: #CC0000;
+}
+.boxRight-3 .look{
+    color: #809902;margin-left: 105px;
+}
+/* .imgLogo{
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-collapse: collapse;
+    line-height: 31px;
+} */
+/* .num{
+    display: inline-block;
+    height: 35px;
+    width: 90px;
+    background: url(../images/login-number.jpg) no-repeat 0px 0px;
+} */
+.sub{
+    text-align: center;
+}
+.sub>button{
+    margin: 5px;
+    width: 90px;
+    height: 35px;
+    color: #7E7E80;
+    cursor: pointer
+}
+/* 跨域样式 */
+.location{
+    position: relative;
+}
+#ullist{
+    background: #fff;
+    width: 227px;
+    position: absolute;
+}
+#ullist li{
+    margin: 5px 0px;
+    color: rgb(162, 162, 165);
+    cursor: pointer;
+}
+#ullist li:hover{
+    background: #EEEEEE;
+    color: #636363;
+}
+/* 花视频 */
+video{
+    margin-left: 68px;
+    margin-top: 100px;
+    
+}
+/* 进度条背静 */
+.videoBox{
+    width: 800px;
+    margin-left: 68px;
+    height: 35px;
+    background: linear-gradient(to top,#d3d3d3,#e4e4e4,#d3d3d3);
+ }
+ /* 开始暂停按钮 */
+ .play,.pause{
+     float: left;
+     height: 16px;
+     width: 15px;
+     background: url(../images/play.png)no-repeat;
+     margin-top: 9px;
+     margin-left: 10px;
+ }
+ .play{
+     background-position: -25px 0px;
+ }
+ .pause{
+     display: none;
+ }
+ /* 进度条 */
+ .progressbar{
+     width: 555px;
+     height: 14px;
+     float: left;
+     background: #6f6c6c;
+     margin-top: 9px;
+     margin-left: 10px;
+     border-radius: 5px;
+    
+ }
+ .progressbar .jdbar{
+     width: 10px;
+     height: 14px;
+     background: red;
+     border-radius:5px;
+   position: relative;
+ }
+ .progressbar .jdbar span{
+     position: absolute;
+     background: url(../images/handle.png)no-repeat;
+     width: 15px;
+     height: 15px;  
+     right: 0;    
+ }
+ /* 播放时长 */
+ .timerbar{
+     float: left;
+     font-size: 12px;
+     margin-top: 10px;
+     margin-left: 5px;
+     color: #706d6d;
+ }
+ /* 音量 */
+ .volumbar{
+     width:80px;
+     height: 14px;
+     float: left;
+     background: #6f6c6c;
+     margin-top: 9px;
+     margin-left: 10px;
+     border-radius: 10px;
+    
+ }
+ .volumbar .ylbar{
+     width: 20px;
+     height: 14px;
+     background: red;
+     border-radius: 10px;
+   position: relative;
+ }
+ .volumbar .ylbar span{
+     position: absolute;
+     background: url(../images/handle.png)no-repeat;
+     width: 15px;
+     height: 15px;  
+     right: 0;
+ }
+ /* 全屏 */
+ .full{
+     background: url(../images/full.png) no-repeat;
+     width: 15px;
+     height: 15px;
+     float: left;
+     margin-top: 9px;
+     margin-left: 10px;
+     background-size: contain;
+ }

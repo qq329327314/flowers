@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "vue.js",
+			"path": "..\\..\\..\\自学\\vue.js"
+		},
+		{
+			"name": "JavaScript高级",
+			"path": "..\\..\\..\\嘉华学习\\JavaScript高级"
+		},
+		{
+			"path": "..\\..\\..\\嘉华学习\\jQuery"
+		},
+		{
+			"path": "..\\..\\..\\嘉华学习\\HTML5高级开发"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "花礼网项目"
+	}
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/sendinfo.css" />
+	<link rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+	<header class="common_head_box">
+		<div class="head_box container clearfix">
+			<!-- lt_nav -->
+			<ul class="lt_nav clearfix">
+				<li>
+					<a href="#"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+				</li>
+				<li>
+					<a href="#"><span class="head_icon"></span>关注微信</a>
+					<div class="menu">
+						<img src="images/login_wxguanjia_qrcode.png" alt="">
+						<p>
+							扫码关注<br>
+							回复“礼物”更多惊喜
+						</p>
+					</div>
+				</li>
+				<li>
+					<a href="#"><span class="head_icon"></span>花礼网app</a>
+					<div class="menu">
+						<img src="images/login_download_qrcode.png" alt="">
+						<p>新人专属100元APP礼包</p>
+					</div>
+				</li>
+			</ul>
+			<!-- rt_nav -->
+			<ul class="rt_nav clearfix">
+				<li>
+					<a href="login.html" class="login">您好，请登录</a>
+					<a href="enroll.html" class="register">注册</a>
+				</li>
+				<li class="line">|</li>
+				<li>
+					<a href="serve.html">订单查询</a>
+				</li>
+				<li class="line">|</li>
+				<li>
+					<a href="">我的花礼</a>
+				</li>
+				<li class="line">|</li>
+				<li class="customer_service">
+					<a href="">客户服务<span class="triangle_icon"></span></a>
+					<ul class="service_list">
+						<li><a>在线付款</a></li>
+						<li><a>帮助中心</a></li>
+						<li><a>售后服务</a></li>
+						<li><a>配送范围</a></li>
+						<li><a>留言反馈</a></li>
+					</ul>
+				</li>
+				<li class="line">|</li>
+				<li class="shop_cart">
+					<a href="showcart.html" class="shop_cart_link">购物车</a>
+					<!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+					<ul class="empty_shop_list">
+						<li class="empty">您的购物车中没有商品，先去选购把！</li>
+					</ul>
+					<!-- 购物车有内容时显示的列表 -->
+					<ul class="shop_list">
+
+						<li class="settlement">
+							<span class="shop_count">1</span>件总计:<span class="total_price">￥239</span>
+							<a href="#" class="goto_settlement rt">去购物车结算</a>
+						</li>
+					</ul>
+				</li>
+				<li class="line">|</li>
+				<li>
+					<a href="">中国鲜花礼品网：中国鲜花网领先品牌</a>
+				</li>
+			</ul>
+		</div>
+
+	</header>
+	<!-- 头部 end -->
+
+
+	<!-- 搜索区 start -->
+	<section class="common_search_box container">
+		<a href="index.html" class="huali_logo lt">
+			<img src="images/pc_hualogo.png" alt="">
+		</a>
+
+		<div class="rt_consult_box rt">
+			<span class="phone_consult"></span>
+			400-889-8188
+			<em class="line">|</em>
+			<a href="" class="on_line_service">
+				<i class="icon"></i>
+				在线客服
+			</a>
+		</div>
+	</section>
+	<!-- 搜索区 end -->
+
+	<section class="section">
+		<div class="order">
+			<div class="inform">
+				<span class="iconfont iconfont-tips"></span>
+				未注册可在此页面直接下单，已有花礼网账户 <a href="login.html">请登录></a>
+				<span class="iconfont iconfont-emptytext"></span>
+			</div>
+			<div class="order-content">
+				<form action="" method="">
+					<ul>
+						<li>
+							<h3>收货人信息</h3>
+						</li>
+						<li><span>*</span>收货人<input type="text" placeholder="请输入收货人姓名" /></li>
+						<li><span>*</span>手机号码<input type="text" placeholder="请输入收货人手机号码" /></li>
+						<li>
+							<span>*</span>所在地区
+							<div class="order-select">
+								<select name="" id="">
+									<option value="请选择省">请选择省</option>
+								</select>
+								<select name="" id="">
+									<option value="请选择市">请选择市</option>
+								</select>
+								<select name="" id="">
+									<option value="请选择区/县">请选择区/县</option>
+								</select>
+							</div>
+						</li>
+						<li><span>*</span>详细地址<input type="text" placeholder="请输入收货人详细地址" /></li>
+					</ul>
+					<ul>
+						<li>
+							<h3>订购人信息</h3>
+						</li>
+						<li><span>*</span>订购人<input type="text" placeholder="请输入订购人姓名" /></li>
+						<li><span>*</span>订购人手机<input type="text" placeholder="请输入订购人手机号码" /></li>
+						<li><span class="setEmail">无中国大陆手机号 >></span></li>
+					</ul>
+					<ul>
+						<li>
+							<h3>送达日期</h3>
+						</li>
+						<li>
+							<span>*</span>送达日期
+							<input type="text" placeholder="请选择送达日期" readonly />
+							<i class="iconfont iconfont-rili"></i>
+						</li>
+					</ul>
+					<ul class="message clear">
+						<li>
+							<h3>贺卡留言</h3>
+						</li>
+						<li>
+							<textarea placeholder="写下您的祝福语，可附上署名（200字以内）" id="" rows="5" maxlength="200"></textarea>
+							<span class="message-limit"><span>0</span>/200</span>
+						</li>
+						<li class="message-right">
+							<ul class="message-right-nav clear">
+								<li class="active">生日祝福</li>
+								<li>送恋人</li>
+								<li>送朋友</li>
+								<li>送长辈</li>
+							</ul>
+							<ul class="message-right-section active">
+								<li><a>1.亲爱的，生日快乐，我只想唯一霸道的拥有着一个你。给我开开心心的一辈子。生日快乐！my love</a></li>
+								<li><a>2.今天是你的生日，你最大！在这个属于你最灿烂的日子里，我诚挚的送上一句最古老但又是最新鲜出炉的生日祝福：生日快乐！健康平安！</a></li>
+								<li><a>3.亲爱的~~生日快乐生日快乐生日快乐~爱你么么哒——给全世界最温柔最可爱的小姐姐~</a></li>
+								<li><a>4.感谢上苍在今天给了我一个特别的礼物，就是你。长长的人生旅程，有你相伴是我一生的幸福。祝你生日快乐!</a></li>
+								<li><a>5.在这个特别的日子里，我没有别的话，只想你知道，每年今天，你都会收到我的祝福，感受到我的爱，永远的爱!</a></li>
+								<li><a>6.有些事我每天都挂念，但只能一年说一次。迟到了，对不起。生日快乐！</a></li>
+								<li><a>7.特别的日子，特别的祝福，送给生日的你：希望长大一岁的你更成熟，更顺利，更漂亮！年年18！</a></li>
+								<li><a>8.你虽不在我身旁可我从未将你遗忘…做你想做的事，去你想去的地方，爱你想爱的人，追求你想追求的梦想，亲爱的朋友，祝你生日快乐！</a></li>
+								<li><a>9.简单的一句话语，一个祝福，寄给一个远在他乡的你。虽然不常联系，但是不曾忘记。祝你生日快乐，更愿你天天都有个好心情!</a></li>
+								<li><a>10.您的生日让我想起您对我的体贴，还有您为我所做的一切。我只希望您所给予我的幸福，我将同样回报给您。祝福您事事顺心，幸福无边!</a></li>
+								<li><a>11.妈妈，生日快乐！真希望能有语言能表达我们的谢意，感谢您每日操持家务及给予我们的帮助。愿您在今后的岁月中永远快乐、健康！</a></li>
+							</ul>
+							<ul class="message-right-section">
+								<li><a>1.遇到你我感到很幸福，但是我不能成为世界上最幸福的人，因为我们在一起，我要让你成为世界上最幸福的人。</a></li>
+								<li><a>2.有些情感，无需多么华美，只是简单的遇见，简单的想念，哪怕它只是简单到：拉着你的手，迎着风走！</a></li>
+								<li><a>3.我多么希望，有一个门口，早晨，阳光照在草上，我们站着，扶着自己的门扇，门很低，但太阳是明亮的。草在结它的种子，风在摇它的叶子，我们站着，不说话，就十分美好。</a></li>
+								<li><a>4.如果世界上曾经有那个人出现过，其他人都会变成将就，而我，不愿意将就。没遇到爱时，它是一个遥不可及的幻梦，遇到爱之后，它是一份可以被触碰的美好，不善言辞的我，爱上了你后，突然有很多话想说给你听..</a></li>
+								<li><a>5.我还是喜欢你，就像风追随云，我好想追到你，又怕吹散了你，春风十里，不如你。</a></li>
+								<li><a>6.亲爱的：在这特别的日子，我只能用心去默默地想你、爱你。只想告诉你：永远深爱着你，希望你每年的今天都能过一个快乐的生日。</a></li>
+								<li><a>7.为你的幸福而高兴，并且我愿付出一切让你更幸福。任何时候为爱你付出的一切都不是白白浪费。</a></li>
+								<li><a>8.爱你是我一生无悔的决定，漫天星星都是我注视你的眼睛。无论结局如何，我都知道：此生最爱是你！</a></li>
+								<li><a>9.时间会慢慢地让你了解，一个外表很冷漠又很怕羞的人，他的心却充满了对你的爱。</a></li>
+								<li><a>10.我的错误，划破了你的心。如今，我用我真挚的爱弥补你的伤口，请接受我的诚意。</a></li>
+							</ul>
+							<ul class="message-right-section">
+								<li><a>1.一切的不顺心都是纸老虎！希望你开心！
+									</a></li>
+								<li><a>2.不管世界尽头多寂寞，你的身边一定有我
+									</a></li>
+								<li><a>3.不求同年同月同日生，但求同年同月同日疯
+									</a></li>
+								<li><a>4.最深的爱，总是风雨兼程；最浓的情，总是冷暖与共；最懂的人，才是最暖的伴。朋友，感恩有你。
+									</a></li>
+								<li><a>5.不是所有人都能掏心掏肺，不是所有的路过都是风景，不是所有的擦肩都是过客。但无论是对朋友还是爱人，只要是在乎我的，我都会加倍珍惜！
+									</a></li>
+								<li><a>6.吾在茫茫人海遇见了你，能成为知己，得知，我的幸运！
+									</a></li>
+								<li><a>7.朋友就是那种不需要时刻想起，永远也不会忘记的人，当我需要的时候，还没有讲，你已来到我的身边。不过有你的做伴使我不再感到渺小和孤独。
+									</a></li>
+								<li><a>8.无私无邪无猜无疑的友情无价，你是我买不到的奢华
+									</a></li>
+								<li><a>9.人逢知己千杯少，难得在漫漫人生路上能认识你，在一起走过的日子，非常的感谢你给我的帮助，我始终不能忘记我们友谊，不能忘记我们在一起的点点滴滴，很想说有你真好，祝福你，我的朋友。
+									</a></li>
+								<li><a>10.这些日子你过得还好吗？也许忙碌改变了我们的生活，但我永远珍惜我们的情谊。</a></li>
+							</ul>
+							<ul class="message-right-section">
+								<li><a>1.引一缕清风，为妈妈带去轻松；采一缕阳光，为妈妈送去芬芳；掬一捧清水，为妈妈消去疲惫；送一束鲜花，为妈妈奉上祝福。祝妈妈生日快乐！
+									</a></li>
+								<li><a>2.美丽动人可爱迷人的妈妈：生日快乐！青春永驻！虽然不能陪伴在你身边，我的心一直陪伴着你，我爱你，妈妈。
+									</a></li>
+								<li><a>3.“洗衣做饭忙不完，每日忙碌不着闲，历经风霜添白发，勤劳持家不知烦”。作为儿子女儿的我们，深知您每天的辛苦忙碌，但作为儿子女儿的我们，同样要给您幸福，祝您生日快乐，幸福万年长。
+									</a></li>
+								<li><a>4.从一个城市到另一个城市，只有靠自己努力。学会长大，学会承受，学会哭过之后，还可以微笑地拥抱爸爸妈妈。因为你们一直是我的守护神！让我走到哪里都不会怕！
+									</a></li>
+								<li><a>5.谢谢您做的一切，双手撑起我们的家，总是竭尽所有把最好的给我们。不要再为我们而担心啦，你牵挂的孩子长大了。
+									</a></li>
+								<li><a>6.岁月总是越来越短，生日总是越来越快。留不住的时光使您走向人生的至善，留得住的贺卡捎去的是我深深的怀念。真心希望晚辈的祝福带给您欢乐！
+									</a></li>
+								<li><a>7.听说神无法无处不在，所以创造了妈妈。即使到了妈妈的年龄，妈妈的妈妈仍然是妈妈的守护神。妈妈这个词，只是叫一叫，也觉得喉间哽咽。妈妈，最有力量的名字；妈妈，祝你永远年轻。
+									</a></li>
+								<li><a>8.父爱如山，父爱无言，您总是微笑着担起了整个家庭。在我心中，您是全天下最好的爸爸。
+									</a></li>
+								<li><a>9.您用优美的年轮，编成一册散发油墨清香的日历；年年，我都会在日历的这一天上，用深情的想念，祝福您的生日。
+									</a></li>
+								<li><a>10.亲爱的妈妈：您曾用您坚实的臂弯为我撑起一片蓝天；而今，我也要用我日益丰满的羽翼为您遮挡风雨。妈妈，我永远爱您！生日快乐！祝我的美女妈妈越来越青春，身体健康，瘦成闪电，未来的我可以每个假期带你出去纵横~</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- <ul class="order-function">
+						<li><span class="iconfont iconfont-unchecked"></span>备注<input type="text" placeholder="选填（120字以内）" maxlength="120"  id=""></li>
+						<li><span class="iconfont iconfont-unchecked"></span>发票</li>
+						<li><span class="iconfont iconfont-unchecked"></span>使用优惠券</li>
+					</ul> -->
+					<ul class="order-pay">
+						<li>
+							<h3>核对购物清单</h3>
+						</li>
+						<li>
+							<ul class="showcart clear">
+
+							</ul>
+						</li>
+						<li>
+							<p><span class="pLeft">配送至:</span> <span class="pRight">共 <span id="count">1</span>
+									件商品，总商品金额： <span class="allprice">￥1919</span></span></p>
+							<div>
+								应付:<span class="allprice">￥1919</span>
+								<button class="pay-btn">提交订单</button>
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- 底部 start -->
+	<footer class="common_footer_box container">
+		<div class="options">
+			<a href="index.html">首页</a>|
+			<a href="">关于我们</a>|
+			<a href="">媒体报道</a>|
+			<a href="">联系方式</a>|
+			<a href="">企业团购</a>|
+			<a href="">花店入驻</a>|
+			<a href="">友情链接</a>|
+			<a href="">在线补款</a>|
+			<a href="">为什么选择中国鲜花礼品网</a>
+		</div>
+		<div class="ft_logo">
+			<img src="images/slogan.png" alt="">
+			<img src="images/100.jpg" alt="">
+			<img src="images/bico1.jpg" alt="">
+			<img src="images/govIcon.gif" alt="" height="50px">
+		</div>
+		<div class="permit">
+			<p>
+				<a href="">中国花卉协会会员</a>
+				<a href="">中国电子商务协会会员</a>
+				ICP经营许可证：
+				<a href="">粤B2-20050744</a> |
+				<a href="">粤ICP备09171662号</a>
+				粤公网安备44030502000373号 Copyright © 2005-2021
+			</p>
+			<p>
+				花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+			</p>
+		</div>
+	</footer>
+	<!-- 底部 end -->
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/sendinfo.js"></script>
+</body>
+
+</html>

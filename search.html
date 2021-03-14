@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search-font/iconfont.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    
+   
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <header class="common_head_box">
+        <div class="head_box container clearfix">
+            <!-- lt_nav -->
+            <ul class="lt_nav clearfix">
+                <li>
+                    <a href="#"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>关注微信</a>
+                    <div class="menu">
+                        <img src="images/login_wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注<br>
+                            回复“礼物”更多惊喜
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>花礼网app</a>
+                    <div class="menu">
+                        <img src="images/login_download_qrcode.png" alt="">
+                        <p>新人专属100元APP礼包</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- rt_nav -->
+            <ul class="rt_nav clearfix">
+                <li>
+                    <a href="login.html" class="login">您好，请登录</a>
+                    <a href="enroll.html" class="register">注册</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="serve.html">订单查询</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="">我的花礼</a>
+                </li>
+                <li class="line">|</li>
+                <li class="customer_service">
+                    <a href="serve.html">客户服务<span class="triangle_icon"></span></a>
+                    <ul class="service_list">
+                        <li><a>在线付款</a></li>
+                        <li><a>帮助中心</a></li>
+                        <li><a>售后服务</a></li>
+                        <li><a>配送范围</a></li>
+                        <li><a>留言反馈</a></li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li class="shop_cart">
+                    <a href="showcart.html" class="shop_cart_link">购物车</a>
+                    <!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+                    <ul class="empty_shop_list">
+                        <li class="empty">您的购物车中没有商品，先去选购把！</li>
+                    </ul>
+                    <!-- 购物车有内容时显示的列表 -->
+                    <ul class="shop_list">
+                        <li>
+                            <img src="images/pic16.jpg" alt="" class="lt">
+                            <p class="shop_introduce lt">
+                                韩式系列/初心不负— 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利1
+                            </p>
+                            <div class="count_box lt">
+                                <i class="cut">-</i>
+                                <span class="count">1</span>
+                                <i class="add">+</i>
+                            </div>
+                            <span class="price rt">￥239</span>
+                        </li>
+                        <li class="settlement">
+                            <span class="shop_count">1</span>件总计:<span class="total_price">￥239</span>
+                            <a href="#" class="goto_settlement rt">去购物车结算</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">中国鲜花礼品网：中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- 头部 end -->
+    <!-- 搜索区 start -->
+    <section class="common_search_box container">
+        <a href="index.html" class="huali_logo lt">
+            <img src="images/pc_hualogo.png" alt="">
+        </a>
+        <div class="search_box lt">
+            <div class="user_search">
+                <form action="">
+                    <input type="text" id="search" class="user_import lt" placeholder="商品关键词" oninput="getData()">
+                    <button class="search_btn lt">搜索</button>
+                </form>
+                <ul class="search_data_list">
+                    <!-- <li><a href="">1111111</a></li>
+                    <li><a href="">iosfjfn</a></li> -->
+                </ul>
+            </div>
+            <script src="js/search.js"></script>
+
+            <p class="hot">
+                <a href="">红玫瑰</a>|<a href="">水生花</a>|<a href="">生日鲜花</a>|<a href="">金玫瑰</a>
+            </p>
+        </div>
+
+        <div class="rt_consult_box rt">
+            <span class="phone_consult"></span>
+            400-889-8188
+            <em class="line">|</em>
+            <a href="" class="on_line_service">
+                <i class="icon"></i>
+                在线客服
+            </a>
+        </div>
+    </section>
+    <!-- 搜索区 end -->
+    <!-- 全部商品导航 start -->
+    <nav class="common_total_shop_nav">
+        <div class="container clearfix">
+            <div class="total_shop_box lt">
+                <h3 class="total_tit">全部商品导购<i class="icon"></i></h3>
+                <!-- menu -->
+                <div class="menu_box">
+                    <h3 class="tit">鲜花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">爱情鲜花</a></li>
+                        <li><a href="">生日鲜花</a></li>
+                        <li><a href="">友情鲜花</a></li>
+                        <li><a href="">问候长辈</a></li>
+                        <li><a href="">祝贺鲜花</a></li>
+                        <li><a href="">婚庆鲜花</a></li>
+                        <li><a href="">探病慰问</a></li>
+                        <li><a href="">道歉鲜花</a></li>
+                        <li><a href="">开业花篮</a></li>
+                    </ul>
+                    <h3 class="tit">永生花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">经典花盒</a></li>
+                        <li><a href="">巨型玫瑰</a></li>
+                        <li><a href="">薰衣草</a></li>
+                        <li><a href="">永生瓶花</a></li>
+                        <li><a href="">特色永生花</a></li>
+                    </ul>
+                    <h3 class="tit">礼品</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">泰国保鲜花</a></li>
+                        <li><a href="">音乐盒</a></li>
+                        <li><a href="">水晶内雕</a></li>
+                        <li><a href="">金箔花</a></li>
+                        <li><a href="">化妆镜</a></li>
+                        <li><a href="">香薰系列</a></li>
+                        <li><a href="">音乐睡枕</a></li>
+                        <li><a href="">花瓶/相框</a></li>
+                        <li><a href="">卡通花束</a></li>
+                        <li><a href="">品牌公仔</a></li>
+                        <li><a href="">首饰</a></li>
+                        <li><a href="">Giftstalk精选</a></li>
+                        <li><a href="">创意礼品</a></li>
+                        <li><a href="">礼品卡</a></li>
+                        <li><a href="">多肉植物盆栽</a></li>
+                    </ul>
+                    <h3 class="tit">绿植</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">绿色植物</a></li>
+                        <li><a href="">盆在花卉</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="nav_options lt">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">鲜花</a></li>
+                <li><a href="">永生花</a></li>
+                <li><a href="cake.html">蛋糕</a></li>
+                <li><a href="">礼品</a></li>
+                <li><a href="">巧克力</a></li>
+                <li><a href="">花语大全</a></li>
+                <li><a href="">设计师臻选鲜花</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 全部商品导航 end -->   
+    <!-- 正文 -->
+    <article class="clearfix">
+        <!-- 正文左侧 -->
+    <div class="article-left">
+        <!-- 正文左侧分类区 -->
+        <div class="nav-left">
+            <div class="item">
+                <div class="title">
+                    <span class="ico ico-use"></span>
+                    <h4>用途</h4>
+                </div>
+                <ul class="list list1 clearfix">
+                    <li><a href="">爱情鲜花</a></li>
+                    <li><a href="">友情鲜花</a></li>
+                    <li><a href="">生日鲜花</a></li>
+                    <li><a href="">问候长辈</a></li>
+                    <li><a href="">回报老师</a></li>
+                    <li><a href="">探病慰问</a></li>
+                    <li><a href="">道歉鲜花</a></li>
+                    <li><a href="">婚庆鲜花</a></li>
+                    <li><a href="">祝贺鲜花</a></li>
+                    <li><a href="">哀思鲜花</a></li>
+                    <li><a href="">商务鲜花</a></li>
+                    <li><a href="">开业花篮</a></li>
+                    <li><a href="">自选鲜花</a></li>
+                    <li><a href="" class="use-last">港澳台送花</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title">
+                    <span class="ico ico-texture"></span>
+                    <h4>花材</h4>
+                </div>
+                <ul class="list list2">
+                    <li><a href="">玫瑰 </a></li>
+                    <li><a href="">红玫瑰</a></li>
+                    <li><a href="">粉玫瑰</a></li>
+                    <li><a href="">白玫瑰</a></li>
+                    <li><a href="">紫玫瑰</a></li>
+                    <li><a href="">香槟玫瑰</a></li>
+                    <li><a href="">黄玫瑰</a></li>
+                    <li><a href="">康乃馨</a></li>
+                    <li><a href="">百合 </a></li>
+                    <li><a href="">扶郎</a></li>
+                    <li><a href="">向日葵</a></li>
+                    <li><a href="">郁金香</a></li>
+                    <li><a href="">马蹄莲</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title">
+                    <span class="ico ico-color"></span>
+                    <h4>颜色</h4>
+                </div>
+                <ul class="list list3">
+                    <li><a href=""><span class="red"></span> 红色</a></li>
+                    <li><a href=""><span class="pink"></span> 粉色</a></li>
+                    <li><a href=""><span class="champagne"></span> 香槟</a></li>
+                    <li><a href=""><span class="yellow"></span> 黄色</a></li>
+                    <li><a href=""><span class="white"></span> 白色</a></li>
+                    <li><a href=""><span class="purple"></span> 紫色</a></li>
+                    <li><a href=""><span class="blue"></span> 蓝色</a></li>
+
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title">
+                    <span class="ico ico-sort"></span>
+                    <h4>类别</h4>
+                </div>
+                <ul class="list list4">
+                    <li><a href="">花束</a></li>
+                    <li><a href="">花盒</a></li>
+                    <li><a href="">瓶花</a></li>
+                    <li><a href="">精品鲜花</a></li>
+                    <li><a href="">果篮</a></li>
+                    <li><a href="">桌面花篮</a></li>
+                    <li><a href="">开业花篮</a></li>
+                    <li><a href="">组合鲜花</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title">
+                    <span class="ico ico-price"></span>
+                    <h4>价格</h4>
+                </div>
+                <ul class="list list5">
+                    <li><a href="">特价鲜花</a></li>
+                    <li><a href="">150元以下</a></li>
+                    <li><a href="">150-250元</a></li>
+                    <li><a href="">250-350元</a></li>
+                    <li><a href="">350-550元</a></li>
+                    <li><a href="">550-800元</a></li>
+                    <li><a href="">800元以上</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="title">
+                    <span class="ico ico-num"></span>
+                    <h4>枝数</h4>
+                </div>
+                <ul class="list list6">
+                    <li><a href="">9枝</a><a href="">10枝</a><a href="">11枝</a></li>
+                    <li><a href="">12枝</a><a href="">16枝</a><a href="">18枝</a></li>
+                    <li><a href="">19枝</a><a href="">20枝</a><a href="">22枝</a></li>
+                    <li><a href="">29枝</a><a href="">33枝</a><a href="">36枝</a></li>
+                    <li><a href="">50枝</a><a href="">66枝</a><a href="">99枝以上</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 正文左侧分类区 end -->
+        <!-- 正文左侧热销区 -->
+        <div class="c-hot">
+            <div class="c-hot-title">
+                热销鲜花推荐
+            </div>
+            <div class="c-hot-1">
+                <div class="pic"><img src="images/pic7.jpg" alt=""></div>
+                <div class="text"><a href="">鲜花/你是唯一-卡罗拉红玫瑰11枝</a></div>
+                <span class="hot-price">¥145</span>
+            </div>
+            <div class="c-hot-1">
+                <div class="pic"><img src="images/pic6.jpg" alt=""></div>
+                <div class="text"><a href="">鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎</a></div>
+                <span class="hot-price">¥260</span>
+            </div>
+            <div class="c-hot-1">
+                <div class="pic"><img src="images/pic4.jpg" alt=""></div>
+                <div class="text"><a href="">鲜花/韩式系列/亲爱的你-粉佳人玫瑰16枝、白和粉色洋桔梗各5枝、尤加利10枝、浅紫色小菊3枝、深粉</a></div>
+                <span class="hot-price">¥386</span>
+            </div>
+            <div class="c-hot-1">
+                <div class="pic"><img src="images/pic19.jpg" alt=""></div>
+                <div class="text"><a href="">鲜花/韩式系列/慢慢喜欢你-艾莎玫瑰16枝</a></div>
+                <span class="hot-price">¥251</span>
+            </div>
+            <div class="c-hot-1">
+                <div class="pic"><img src="images/pic5.jpg" alt=""></div>
+                <div class="text"><a href="">鲜花/不变的承诺-99枝红玫瑰</a></div>
+                <span class="hot-price">¥698</span>
+            </div>
+            
+        </div>
+        <!-- 正文左侧热销区end -->
+        <!-- 正文左侧评价区 -->
+        <div class="appraise">
+            <div class="appraise-title">最新鲜花订单评价</div>
+        
+        <div class="applist">
+            <div class="applist1">
+                <div class="applist1-pic"><img src="images/left1.jpg" alt=""></div>
+                <div class="applist1-com">
+                    <h5>会员号：131****1562</h5>
+                    <p><a href="">质量高，服务好，速度快</a></p>
+                </div>
+            </div>
+            <div class="applist1">
+                <div class="applist1-pic"><img src="images/left2.jpg" alt=""></div>
+                <div class="applist1-com">
+                    <h5>会员号：276646*</h5>
+                    <p><a href="">喜欢喜欢，这束花好好看</a></p>
+                </div>
+            </div>
+            <div class="applist1">
+                <div class="applist1-pic"><img src="images/left3.jpg" alt=""></div>
+                <div class="applist1-com">
+                    <h5>会员号：276646*</h5>
+                    <p><a href="">很不错(＊?′╰╯`?)</a></p>
+                </div>
+            </div>
+            <div class="applist1">
+                <div class="applist1-pic"><img src="images/left4.jpg" alt=""></div>
+                <div class="applist1-com">
+                    <h5>会员号：276646*</h5>
+                    <p><a href="">多次购买了 喜欢</a></p>
+                </div>
+            </div>
+            <div class="applist1">
+                <div class="applist1-pic"><img src="images/left5.jpg" alt=""></div>
+                <div class="applist1-com">
+                    <h5>会员号：wangdaz*</h5>
+                    <p><a href="">鲜花很漂亮，包装也很显高档，指定的送货时</a></p>
+                </div>
+            </div>
+            <div class="applist1">
+                <div class="applist1-pic"><img src="images/left6.jpg" alt=""></div>
+                <div class="applist1-com">
+                    <h5>会员号：golfyu6*</h5>
+                    <p><a href="">花很漂亮，送花也很即时。服务很满意。</a></p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+        <!-- 正文左侧评价区end -->
+        <!-- 正文中间轮播图 -->
+        <div id="banner" >
+            <div class="pic">
+                <ul>
+                    <li style="display:block;">
+                        <a href=""><img src="images/banner1.jpg" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/banner2.jpg" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/banner3.jpg" /></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="tab">
+                <ul>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
+            </div>
+            <div class="btn">
+                <div id="leftBtn"></div>
+                <div id="rightBtn"></div>
+        
+            </div>
+        </div>
+        <script src="js/search.js"></script>
+        <!-- 正文中间轮播图end -->
+        <!-- 正文中间状态栏 -->
+        <div class="select">
+            <ul class="select-list">
+                <li><a href="" style="color: orangered;">综合</a></li>
+                <li><a href="">销量<i class="myicon iconfont icon-xiajiantou"></i></a></li>
+                <li><a href="">价格<i class="myicon iconfont icon-xiajiantou"></i></a></li>
+                <li><a href="">最新<i class="myicon iconfont icon-xiajiantou"></i></a></li>
+            </ul>
+            <ul class="page">
+                <li style="color: orangered;" class="page-1" id="page01">1</li>
+                <li>/11</li>
+                <li><span class="icon01"></span></li>
+                <li><span class="icon02"></span></li>
+                
+            </ul>
+        </div>
+        <!-- 正文中间状态栏 end -->
+        <!-- 正文中间商品列表 -->
+        <div class="product-list">
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic1.jpg" alt=""></div>
+                <span class="product-price">¥311</span><br/>
+                <a href="details.html">
+                    <span class="product-text">鲜花/韩式系列/一路向阳-向日葵3枝、香槟玫瑰9枝、橙色多头玫5枝、黄色腊梅5枝、大叶尤加利5枝</span>
+                        <span class="product-text-1">花艺师打造 韩式花束系列</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic2.jpg" alt=""></div>
+                <span class="product-price">¥239</span><br/>
+                <a href="details.html">
+                    <span class="product-text">鲜花/韩式系列/初心不负- 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利10枝</span>
+                        <span class="product-text-1">花艺师打造 韩式花束系列</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic3.jpg" alt=""></div>
+                <span class="product-price">¥698</span><br/>
+                <a href="details.html">
+                    <span class="product-text">鲜花/不变的承诺-99枝红玫瑰</span>
+                        <span class="product-text-1">经典99枝，鼎力推荐！</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic4.jpg" alt=""></div>
+                <span class="product-price">¥313</span><br/>
+                <a href="details.html">
+                    <span class="product-text">鲜花/韩式系列/你笑起来真好看-艾莎玫瑰19枝
+                        </span>
+                        <span class="product-text-1">全新韩式系列 珍品玫瑰</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic5.jpg" alt=""></div>
+                <span class="product-price">¥386</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式系列/亲爱的你-粉佳人玫瑰16枝、白和粉色洋桔梗各5枝、尤加利10枝、浅紫色小菊3枝、深粉色/浅粉色绣球1枝
+                        </span>
+                        <span class="product-text-1">花艺师打造 韩式花束系列</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic6.jpg" alt=""></div>
+                <span class="product-price">¥145</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/一往情深-精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎
+                        </span>
+                        <span class="product-text-1">11枝新品 一心一意的爱</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic7.jpg" alt=""></div>
+                <span class="product-price">¥311</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/你是唯一-卡罗拉红玫瑰11枝
+                       </span>
+                        <span class="product-text-1"> 经典爆款，年销售冠军！</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic8.jpg" alt=""></div>
+                <span class="product-price">¥227</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式系列/公主的假日-戴安娜玫瑰11枝、白色洋桔梗5枝、大叶尤加利10枝
+                        </span>
+                        <span class="product-text-1">甜美的公主，今夜你最美</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic10.jpg" alt=""></div>
+                <span class="product-price">¥332</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/忘情巴黎-33枝红玫瑰
+                        </span>
+                        <span class="product-text-1">浪漫唯美 女神挚爱</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic12.jpg" alt=""></div>
+                <span class="product-price">¥177</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/甜蜜相伴-粉佳人玫瑰9枝，白色洋桔梗0.2扎
+                        </span>
+                        <span class="product-text-1">创意包装 高端大气</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic11.jpg" alt=""></div>
+                <span class="product-price">¥386</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/甜美公主-白玫瑰22枝，粉佳人粉玫瑰14枝，粉色桔梗5枝
+                        </span>
+                        <span class="product-text-1">甜美设计 清新典雅</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic13.jpg" alt=""></div>
+                <span class="product-price">¥257</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/留住好时光-粉绣球1枝，粉雪山玫瑰6枝
+                        材</span>
+                        <span class="product-text-1">精选昆明A级花</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic14.jpg" alt=""></div>
+                <span class="product-price">¥258</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式系列/雪国童话-白雪山玫瑰12枝、洋桔梗、红豆、松果
+                        </span>
+                        <span class="product-text-1">你是雪国浪漫童话的主角</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic15.jpg" alt=""></div>
+                <span class="product-price">¥251</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式系列/如约而至-卡罗拉红玫瑰11枝、洋桔梗、红豆、松果
+                        </span>
+                        <span class="product-text-1">你的浪漫如季节如期而至</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic9.jpg" alt=""></div>
+                <span class="product-price">¥418</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/爱在心头-玫瑰50枝：戴安娜粉玫瑰19枝，红玫瑰31枝
+                        </span>
+                        <span class="product-text-1">双色搭配 赏心悦目</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic17.jpg" alt=""></div>
+                <span class="product-price">¥155</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/Best for You-戴安娜粉玫瑰11枝
+                        </span>
+                        <span class="product-text-1">11枝新品 你是我的唯一</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic18.jpg" alt=""></div>
+                <span class="product-price">¥356</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式系列/青春有你-苏醒玫瑰16枝、白色洋桔梗5枝、浅蓝绣球1枝
+                        </span>
+                        <span class="product-text-1">花艺师打造 韩式花束系列</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic19.jpg" alt=""></div>
+                <span class="product-price">¥251</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式系列/慢慢喜欢你-艾莎玫瑰16枝
+                        </span>
+                        <span class="product-text-1">全新韩式系列 珍品玫瑰</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic23.jpg" alt=""></div>
+                <span class="product-price">¥723</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/99枝玫瑰赠德芙心语巧克力-33枝戴安娜、66枝红玫瑰、1扎满天星
+                        </span>
+                        <span class="product-text-1">张杰演唱会定制款</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic22.jpg" alt=""></div>
+                <span class="product-price">¥230</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/粉雪佳人-戴安娜粉玫瑰11枝、白色香水百合2枝、白色洋桔梗5枝
+                        </span>
+                        <span class="product-text-1">清新典雅，至臻设计</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic24.jpg" alt=""></div>
+                <span class="product-price">¥300</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/韩式花篮/平淡岁月-苏醒玫瑰13枝，蓝紫色绣球1枝，香槟洋桔梗5枝
+                        </span>
+                        <span class="product-text-1"> 韩式花束系列</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic26.jpg" alt=""></div>
+                <span class="product-price">¥248</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/我只钟情你-香槟玫瑰11枝、白色小雏菊3枝
+                        </span>
+                        <span class="product-text-1">错落有致 甜蜜纯洁</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic25.jpg" alt=""></div>
+                <span class="product-price">¥293</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/圆满-粉百合2枝、红玫瑰9枝、红色康乃馨15枝
+                        </span>
+                        <span class="product-text-1">花篮设计 送礼百搭</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic5.jpg" alt=""></div>
+                <span class="product-price">¥2519</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/想你365天-红玫瑰365枝</span>
+                        <span class="product-text-1">鲜花/想你365天-红玫瑰365枝</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic27.jpg" alt=""></div>
+                <span class="product-price">¥208</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/满天星-浅粉-满天星1扎
+                        </span>
+                        <span class="product-text-1">满天星辰，只因有你</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic21.jpg" alt=""></div>
+                <span class="product-price">¥260</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/你最珍贵-精品玫瑰礼盒:香槟玫瑰19枝，勿忘我适量
+                        </span>
+                        <span class="product-text-1">优雅设计 精致甄选</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic20.jpg" alt=""></div>
+                <span class="product-price">¥698</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/爱莎公主99-艾莎玫瑰99枝
+                        </span>
+                        <span class="product-text-1">特色新品 渐变色艾莎玫瑰</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-pic"><img class="lazy" src="images/index_lazy_load2.gif"
+                    data-original="images/pic16.jpg" alt=""></div>
+                <span class="product-price">¥698</span><br/>
+                <a href="">
+                    <span class="product-text">鲜花/用心爱你-99枝：33枝戴安娜＋66枝红玫瑰
+                        </span>
+                        <span class="product-text-1">与你相守，直到天荒地老</span>    
+                </a>
+                <div class="product-shoucang">
+                    <a href="#">
+                        <i class="iconfont icon-xin"></i> 收藏
+                    </a>
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchezhengpin"></i> 加入购物车
+                    </a>
+                </div>
+            </div>
+             <!-- 分页 -->
+        <div class="fen-page">
+            <p class="page-manu">1-11 / 共288件商品</p>
+            <ul class="page-ul">
+                <li><a href="#"><i class="left-go" ></i> 上一页</a></li>
+                <li style="background-color: #ff6600;"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">……</a></li>
+                <li><a href="#">11</a></li>
+                <li><a href="#">下一页<i class="right-go"></i></a></li>
+            </ul>
+        </div>
+       <!-- 分页 end -->
+        </div>
+         <!-- 正文中间商品列表 end -->
+    </article>
+    <!-- 正文 end -->
+    <!-- 正文后面知识点 -->
+    <div class="knowledge">
+        <div class="knowledge-head"><p>鲜花常识&送花礼仪</p></div>
+         <ul class="knowledge-body knowledge-body-one">
+             <li><a href="">为什么要选择鲜花速递？</a></li>
+             <li><a href="">选择鲜花速递需要注意什么？</a></li>
+             <li><a href="">送花支数代表的含义</a></li>
+             <li><a href="">各种花代表的不同含义</a></li>
+             <li><a href="">玫瑰概述及花语</a></li>
+
+         </ul>
+         <ul class="knowledge-body knowledge-body-two">
+            <li><a href="">送花的常识和技巧</a></li>
+            <li><a href="">经典送花祝福语</a></li>
+            <li><a href="">用鲜花表达情感-谈送花礼仪</a></li>
+            <li><a href="">不同场合送什么花？</a></li>
+            <li><a href="">鲜花与星座</a></li>
+         </ul>
+         <ul class="knowledge-body knowledge-body-three">
+            <li><a href="">如何让鲜花保鲜</a></li>
+            <li><a href="">鲜花与节日</a></li>
+            <li><a href="">鲜花与生日</a></li>
+            <li><a href="">婚礼用鲜花大全</a></li>
+            <li><a href="">女孩都喜欢别人送鲜花吗？</a></li>
+         </ul>
+       
+
+    </div>
+    <!-- 正文后面知识点 end -->
+    <!-- 视频 -->
+    <div class="video-title"><p> 观看视频 教你如何搭配鲜花 掌握花语</p> </div>
+    <div class="videoscreem">
+        <video id="myvideo">
+        <source src="video/shg_51235344_50001_30d4ae23e7ff3e7db1506e0b8e84076b.f622.mp4">
+            您当前的浏览器不支持
+        </video>
+        <!-- 自定义播放器的布局 -->
+        <div class="videobox">
+            <!-- 开始暂停按钮 -->
+            <span class="play"></span>
+            <span class="pause"></span>
+            <!-- 视频进度条 -->
+            <div class="progressbar">
+                <div class="jdbar">
+                    <span></span>
+                </div>
+            </div>
+            <!-- 时间 -->
+            <div class="timerbar">
+                <span class="currenttime">00:01</span>/
+                <span class="alltime">00:56</span>
+            </div>
+            <!-- 音量进度条 -->
+            <div class="volumbar">
+                <div class="ylbar">
+                    <span></span>
+                </div>
+            </div>
+            <!-- 全屏 -->
+            <div class="full"> 
+            </div>
+        </div>
+    </div>
+        <script src="js/search.js"></script>
+
+
+    <!-- 屏幕底部固咨询框 -->
+    <aside class="ask-box">
+        <i class="ask-icon"></i><span>咨询客服</span>
+    </aside>
+    <!-- 屏幕底部固咨询框end -->
+    <!-- 右侧快速访问栏 -->
+    <div class="guanggao_right">
+        <ul>
+            <li class="head hovers">
+                <div class="hears">
+                    <span class="pics"></span>
+                    <p class="pic"></p>
+                    <p class="pic1">你好，请<a href="#">登录</a>|<a href="#">注册</a></p>
+                    <a href="#"><p class="pic2"><span></span>我的订单</p></a>
+                </div>
+            </li>
+            <div class="hovers">
+                <a href="#"><p class="shop">
+                    <span class="car"></span>
+                    <span class="font">购物车</span><span class="current">0</span>
+                </p></a>
+            </div>
+            <a href="#"><li class="xinx hovers">
+                <div class="xinxin animation">
+                    <p class="pics1"></p>
+                    <a href="#">我的收藏</a>
+                </div>
+            </li></a>
+            <a href="#"><li class="chakan hovers">
+                <div class="chakans animation">
+                    <p class="pics1"></p>
+                    <a href="#">最近查看</a>
+                </div>
+            </li></a>
+            <a href="#"><li class="phone hovers">
+                <div class="phones animation">
+                    <p class="pics1"></p>
+                    <a href="#">400-889-8188</a>
+                </div>
+            </li></a>
+            <a href="#"><li class="zaixian hovers">
+                <div class="zaixians animation">
+                    <p class="pics1"></p>
+                    <a href="#">在线客服</a>
+                </div>
+
+            </li></a>
+            <a href="" class="backtotop" id="to-top">
+                <i></i>
+            </a>
+            <a href="#"><li class="erweima hovers">
+                <div class="erweimas">
+                    <p class="pics1"></p>
+                    <div class="weixin clear">
+                        <img src="images/wxguanjia_qrcode.png" wigth="105" height="105">
+                        <p>关注微信公众号</p>
+                    </div>
+                    <div class="huali">
+                        <img src="images/app_download_qrcode.png" wigth="105" height="105">
+                        <p>下载花礼APP</p>
+                    </div>
+                </div>
+            </li></a>
+            <a href="#"><li class="fankui hovers">
+                <div class="fankuis animation">
+                    <p class="pics1"></p>
+                    <a href="#">功能反馈</a>
+                </div>
+            </li></a>
+        </ul>
+    </div>
+    <!-- 右侧快速访问栏end -->
+    <!-- 底部 start -->
+<footer class="common_footer_box container">
+    <div class="options">
+        <a href="">首页</a>|
+        <a href="">关于我们</a>|
+        <a href="">媒体报道</a>|
+        <a href="">联系方式</a>|
+        <a href="">企业团购</a>|
+        <a href="">花店入驻</a>|
+        <a href="">友情链接</a>|
+        <a href="">在线补款</a>|
+        <a href="">为什么选择中国鲜花礼品网</a>
+    </div>
+    <div class="ft_logo">
+        <img src="images/slogan.png" alt="">
+        <img src="images/100.jpg" alt="">
+        <img src="images/bico1.jpg" alt="">
+        <img src="images/govIcon.gif" alt="" height="50px">
+    </div>
+    <div class="permit">
+        <p>
+            <a href="">中国花卉协会会员</a>
+            <a href="">中国电子商务协会会员</a>
+            ICP经营许可证：
+            <a href="">粤B2-20050744</a> |
+            <a href="">粤ICP备09171662号</a>
+            粤公网安备44030502000373号 Copyright © 2005-2021
+        </p>
+        <p>
+            花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+        </p>
+    </div>
+</footer>
+<!-- 底部 end -->
+
+   
+</body>
+<script src="js/search.js"></script>
+</html>

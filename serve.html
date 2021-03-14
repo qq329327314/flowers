@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单查询页面</title>
+    <link rel="shortcut icon" type="images/x-icon"  href="favicon.ico">
+    <link rel="stylesheet" href="css/serve.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <header class="common_head_box">
+        <div class="head_box container clearfix">
+            <!-- lt_nav -->
+            <ul class="lt_nav clearfix">
+                <li>
+                    <a href="#"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>关注微信</a>
+                    <div class="menu">
+                        <img src="images/login_wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注<br>
+                            回复“礼物”更多惊喜
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>花礼网app</a>
+                    <div class="menu">
+                        <img src="images/login_download_qrcode.png" alt="">
+                        <p>新人专属100元APP礼包</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- rt_nav -->
+            <ul class="rt_nav clearfix">
+                <li>
+                    <a href="login.html" class="login">您好，请登录</a>
+                    <a href="enroll.html" class="register">注册</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="serve.html">订单查询</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="">我的花礼</a>
+                </li>
+                <li class="line">|</li>
+                <li class="customer_service">
+                    <a href="serve.html">客户服务<span class="triangle_icon"></span></a>
+                    <ul class="service_list">
+                        <li><a>在线付款</a></li>
+                        <li><a>帮助中心</a></li>
+                        <li><a>售后服务</a></li>
+                        <li><a>配送范围</a></li>
+                        <li><a>留言反馈</a></li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li class="shop_cart">
+                    <a href="showcart.html" class="shop_cart_link">购物车</a>
+                    <!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+                    <ul class="empty_shop_list">
+                        <li class="empty">您的购物车中没有商品，先去选购把！</li>
+                    </ul>
+                    <!-- 购物车有内容时显示的列表 -->
+                    <ul class="shop_list">
+                        <!-- <li>
+                            <img src="images/pic16.jpg" alt="" class="lt">
+                            <p class="shop_introduce lt">
+                                韩式系列/初心不负— 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利1
+                            </p>
+                            <div class="count_box lt">
+                                <i class="cut">-</i>
+                                <span class="count">1</span>
+                                <i class="add">+</i>
+                            </div>
+                            <span class="price rt">￥239</span>
+                        </li>
+                        <li class="settlement">
+                            <span class="shop_count">1</span>件总计:<span class="total_price">￥239</span>
+                            <a href="showcart.html" class="goto_settlement rt">去购物车结算</a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">中国鲜花礼品网：中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 头部 end -->
+    <!-- 搜索区 start -->
+    <section class="common_search_box container">
+        <a href="index.html" class="huali_logo lt">
+            <img src="images/pc_hualogo.png" alt="">
+        </a>
+        <div class="search_box lt location">
+            <div class="user_search">
+                <form action="search.html">
+                    <input type="text" class="user_import lt" id="searchv" placeholder="商品关键词" autocomplete="off">
+                    <button class="search_btn lt">搜索</button>
+                </form>
+                <!-- <ul class="search_data_list">
+                    <li><a href="">1111111</a></li>
+                    <li><a href="">iosfjfn</a></li>
+                </ul> -->
+                <ul id="ullist">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+
+            <p class="hot">
+                <a href="">红玫瑰</a>|<a href="">水生花</a>|<a href="">生日鲜花</a>|<a href="">金玫瑰</a>
+            </p>
+        </div>
+
+        <div class="rt_consult_box rt">
+            <span class="phone_consult"></span>
+            400-889-8188
+            <em class="line">|</em>
+            <a href="" class="on_line_service">
+                <i class="icon"></i>
+                在线客服
+            </a>
+        </div>
+    </section>
+    <!-- 搜索区 end -->
+    <!-- 全部商品导航 start -->
+    <nav class="common_total_shop_nav">
+        <div class="container clearfix">
+            <div class="total_shop_box lt">
+                <h3 class="total_tit">全部商品导购<i class="icon"></i></h3>
+                <!-- menu -->
+                <div class="menu_box">
+                    <h3 class="tit">鲜花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">爱情鲜花</a></li>
+                        <li><a href="">生日鲜花</a></li>
+                        <li><a href="">友情鲜花</a></li>
+                        <li><a href="">问候长辈</a></li>
+                        <li><a href="">祝贺鲜花</a></li>
+                        <li><a href="">婚庆鲜花</a></li>
+                        <li><a href="">探病慰问</a></li>
+                        <li><a href="">道歉鲜花</a></li>
+                        <li><a href="">开业花篮</a></li>
+                    </ul>
+                    <h3 class="tit">永生花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">经典花盒</a></li>
+                        <li><a href="">巨型玫瑰</a></li>
+                        <li><a href="">薰衣草</a></li>
+                        <li><a href="">永生瓶花</a></li>
+                        <li><a href="">特色永生花</a></li>
+                    </ul>
+                    <h3 class="tit">礼品</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">泰国保鲜花</a></li>
+                        <li><a href="">音乐盒</a></li>
+                        <li><a href="">水晶内雕</a></li>
+                        <li><a href="">金箔花</a></li>
+                        <li><a href="">化妆镜</a></li>
+                        <li><a href="">香薰系列</a></li>
+                        <li><a href="">音乐睡枕</a></li>
+                        <li><a href="">花瓶/相框</a></li>
+                        <li><a href="">卡通花束</a></li>
+                        <li><a href="">品牌公仔</a></li>
+                        <li><a href="">首饰</a></li>
+                        <li><a href="">Giftstalk精选</a></li>
+                        <li><a href="">创意礼品</a></li>
+                        <li><a href="">礼品卡</a></li>
+                        <li><a href="">多肉植物盆栽</a></li>
+                    </ul>
+                    <h3 class="tit">绿植</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">绿色植物</a></li>
+                        <li><a href="">盆在花卉</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="nav_options lt">
+                <li><a href="">首页</a></li>
+                <li><a href="">鲜花</a></li>
+                <li><a href="">永生花</a></li>
+                <li><a href="cake.html">蛋糕</a></li>
+                <li><a href="">礼品</a></li>
+                <li><a href="">巧克力</a></li>
+                <li><a href="">花语大全</a></li>
+                <li><a href="">设计师臻选鲜花</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 全部商品导航 end -->
+    <!-- 顺序位置 -->
+    <div class="container fixclear">
+        <div class="breadcrumbs">
+            <a href="">首页</a> > <a href="">帮助中心</a> > <a href="">订单补交货款</a>
+        </div>
+        <!-- 左侧导航 -->
+        <div class="pull-left fixclear">
+            <div class="navHeight">
+                <span class="logo-green"></span>
+                <div class="hd">帮助中心</div>
+                <dl>
+                    <dt><i class="issue"></i> 常见问题</dt>
+                    <dd><a href="">常见问题</a></dd>
+                </dl>
+                <dl>
+                    <dt><i class="indeng-logo"></i> 订单帮助</dt>
+                    <dd><a href="">订单查询</a></dd>
+                    <dd><a href="">取消订单</a></dd>
+                    <dd><a href="">订单补交货款</a></dd>
+                </dl>
+                <dl>
+                    <dt><i class="service-logo"></i> 售后服务 </dt>
+                    <dd><a href="">投诉说明</a></dd>
+                    <dd><a href="">优惠卷说明</a></dd>
+                    <dd><a href="">鲜花售后服务</a></dd>
+                    <dd><a href="">绿植售后服务</a></dd>
+                    <dd><a href="">其他售后服务</a></dd>
+                </dl>
+                <dl>
+                    <dt><i class="gift-logo"></i> 礼品卡 </dt>
+                    <dd><a href="">礼品卡使用说明</a></dd>
+                    <dd><a href="">礼品卡余额查询</a></dd>
+                </dl>
+                <dl>
+                    <dt><i class="aim-logo"></i> 服务声明 </dt>
+                    <dd><a href="">服务声明</a></dd>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">隐私条款</a></dd>
+                </dl>
+                <dl>
+                    <dt><i class="distribution-logo"></i> 配送说明 </dt>
+                    <dd><a href="">配送说明</a></dd>
+                    <dd><a href="">鲜花配送范围</a></dd>
+                    <dd><a href="">郊区/偏远地区配送费用</a></dd>
+                    <dd><a href="">港澳台配送说明</a></dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 订单 -->
+        <div class="indent">
+            <div class="line"></div>
+            <div class="eng">ORDER QUERY</div>
+            <div class="hz">订单查询</div>
+            <div class="fromBox">
+                <form action="" class="poBox">
+                    <div class="topCols">查询订单处理状态、详细内容</div>
+                    <div> <span class="boxLeft"><i class="dian">.</i></span><span class="boxRight">提示：如果您是会员，请点击
+                            <a href="#" class="red1">会员中心</a>查询订单信息</span></div>
+                    <div><span class="boxLeft">订单号:</span><span class="boxRight"><input type="text" class="order"
+                                id="order-kd"><span class="red-1">*订单号（隐藏）</span></span></div>
+                    <div> <span class="boxLeft">订购人手机或邮箱:</span><span class="boxRight"><input type="text"
+                                class="order-call" id="order-cm"><span class="red">*您提交订单的E-mail或手机</span> </span></div>
+                    <div><span class="boxLeft">验证码:</span><span class="boxRight-3"><input type="text"
+                                class="verification"><a href="" class="look">看不清,换一张</a></span></div>
+                    <div class="sub">
+                        <button>>>马上查询</button>
+                    </div>
+                </form>
+            </div>
+            <!-- 视频 -->
+            <div>
+                <video width="800px" id="video">
+                    <source src="video/2c31eb2c450676ffaddf19405fcf6887.mp4">
+                </video>
+                <!-- 开始暂停按钮 -->
+                <div class="videoBox">
+                    <span class="play"></span>
+                    <span class="pause"></span>
+                    <!-- 进度条 -->
+                    <div class="progressbar">
+                        <div class="jdbar">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 时间 -->
+                    <div class="timerbar">
+                        <span class="currentTime">00:00</span> /
+                        <span class="allTime">0:42</span>
+                    </div>
+                    <!-- 音量 -->
+                    <div class="volumbar">
+                        <div class="ylbar">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 全屏 -->
+                    <div class="full">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 start -->
+    <footer class="common_footer_box container">
+        <div class="options">
+            <a href="">首页</a>|
+            <a href="">关于我们</a>|
+            <a href="">媒体报道</a>|
+            <a href="">联系方式</a>|
+            <a href="">企业团购</a>|
+            <a href="">花店入驻</a>|
+            <a href="">友情链接</a>|
+            <a href="">在线补款</a>|
+            <a href="">为什么选择中国鲜花礼品网</a>
+        </div>
+        <div class="ft_logo">
+            <img src="images/slogan.png" alt="">
+            <img src="images/100.jpg" alt="">
+            <img src="images/bico1.jpg" alt="">
+            <img src="images/govIcon.gif" alt="" height="50px">
+        </div>
+        <div class="permit">
+            <p>
+                <a href="">中国花卉协会会员</a>
+                <a href="">中国电子商务协会会员</a>
+                ICP经营许可证：
+                <a href="">粤B2-20050744</a> |
+                <a href="">粤ICP备09171662号</a>
+                粤公网安备44030502000373号 Copyright © 2005-2021
+            </p>
+            <p>
+                花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+            </p>
+        </div>
+    </footer>
+    <!-- 底部 end -->\
+    <script src="js/serve.js"></script>
+    <script src="js/cookie.js"></script>
+</body>
+
+</html>

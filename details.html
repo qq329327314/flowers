@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/details2.css">
+    <link rel="stylesheet" href="css/details-iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet" href="lib/fullpage2.9.4/jquery.fullPage.css"> -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <!-- <script src="lib/fullpage2.9.4/jquery.fullPage.min.js"></script> -->
+    <script src="js/details.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <header class="common_head_box">
+        <div class="head_box container clearfix">
+            <!-- lt_nav -->
+            <ul class="lt_nav clearfix">
+                <li>
+                    <a href="./index.html"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>关注微信</a>
+                    <div class="menu">
+                        <img src="images/login_wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注<br>
+                            回复“礼物”更多惊喜
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>花礼网app</a>
+                    <div class="menu">
+                        <img src="images/login_download_qrcode.png" alt="">
+                        <p>新人专属100元APP礼包</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- rt_nav -->
+            <ul class="rt_nav clearfix">
+                <li>
+                    <a href="./login.html" class="login">您好，请登录</a>
+                    <a href="./enroll.html" class="register">注册</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="./serve.html">订单查询</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="./index.html">我的花礼</a>
+                </li>
+                <li class="line">|</li>
+                <li class="customer_service">
+                    <a href="serve.html">客户服务<span class="triangle_icon"></span></a>
+                    <ul class="service_list">
+                        <li><a>在线付款</a></li>
+                        <li><a>帮助中心</a></li>
+                        <li><a>售后服务</a></li>
+                        <li><a>配送范围</a></li>
+                        <li><a>留言反馈</a></li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li class="shop_cart">
+                    <a href="./showcart.html" class="shop_cart_link">购物车</a>
+                    <!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+                    <ul class="empty_shop_list">
+                        <li class="empty">您的购物车中没有商品，先去选购把！</li>
+                    </ul>
+                    <!-- 购物车有内容时显示的列表 -->
+                    <ul class="shop_list">
+                        <li>
+                            <img src="images/dateils-coke1.jpg" alt="" class="lt">
+                            <p class="shop_introduce lt">
+                                韩式系列/初心不负— 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利1
+                            </p>
+                            <div class="count_box lt">
+                                <i class="cut">-</i>
+                                
+                                <span  class="count" >1</span>
+                                <i class="add">+</i>
+                            </div>
+                            <span class="price rt">￥298</span>
+                        </li>
+                        <li class="settlement">
+                            <span class="shop_count">1</span>件总计:<span class="total_price">￥298</span>
+                            <a href="./showcart.html" class="goto_settlement rt">去购物车结算</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">中国鲜花礼品网：中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- 头部 end -->
+
+
+    <!-- 搜索区 start -->
+    <section class="common_search_box container">
+        <a href="index.html" class="huali_logo lt">
+            <img src="images/pc_hualogo.png" alt="">
+        </a>
+        <div class="search_box lt">
+            <div class="user_search">
+                <form action="search.html" style="width:325px">
+                    <input type="text" class="user_import lt" placeholder="商品关键词" id="searchBox" >
+                    <button class="search_btn lt">搜索</button>
+                </form>
+                <ul class="search_data_list" id="showBox">
+                    <!-- <li><a href="">1111111</a></li>
+                    <li><a href="">iosfjfn</a></li> -->
+                </ul>
+            </div>
+
+            <p class="hot">
+                <a href="">红玫瑰</a>|<a href="">水生花</a>|<a href="">生日鲜花</a>|<a href="">金玫瑰</a>
+            </p>
+        </div>
+
+        <div class="rt_consult_box rt">
+            <span class="phone_consult"></span>
+            400-889-8188
+            <em class="line">|</em>
+            <a href="" class="on_line_service">
+                <i class="icon"></i>
+                在线客服
+            </a>
+        </div>
+    </section>
+    <!-- 搜索区 end -->
+
+
+    <!-- 全部商品导航 start -->
+    <nav class="common_total_shop_nav">
+        <div class="container clearfix">
+            <div class="total_shop_box lt">
+                <h3 class="total_tit">全部商品导购<i class="icon"></i></h3>
+                <!-- menu -->
+                <div class="menu_box">
+                    <h3 class="tit">鲜花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">爱情鲜花</a></li>
+                        <li><a href="">生日鲜花</a></li>
+                        <li><a href="">友情鲜花</a></li>
+                        <li><a href="">问候长辈</a></li>
+                        <li><a href="">祝贺鲜花</a></li>
+                        <li><a href="">婚庆鲜花</a></li>
+                        <li><a href="">探病慰问</a></li>
+                        <li><a href="">道歉鲜花</a></li>
+                        <li><a href="">开业花篮</a></li>
+                    </ul>
+                    <h3 class="tit">永生花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">经典花盒</a></li>
+                        <li><a href="">巨型玫瑰</a></li>
+                        <li><a href="">薰衣草</a></li>
+                        <li><a href="">永生瓶花</a></li>
+                        <li><a href="">特色永生花</a></li>
+                    </ul>
+                    <h3 class="tit">礼品</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">泰国保鲜花</a></li>
+                        <li><a href="">音乐盒</a></li>
+                        <li><a href="">水晶内雕</a></li>
+                        <li><a href="">金箔花</a></li>
+                        <li><a href="">化妆镜</a></li>
+                        <li><a href="">香薰系列</a></li>
+                        <li><a href="">音乐睡枕</a></li>
+                        <li><a href="">花瓶/相框</a></li>
+                        <li><a href="">卡通花束</a></li>
+                        <li><a href="">品牌公仔</a></li>
+                        <li><a href="">首饰</a></li>
+                        <li><a href="">Giftstalk精选</a></li>
+                        <li><a href="">创意礼品</a></li>
+                        <li><a href="">礼品卡</a></li>
+                        <li><a href="">多肉植物盆栽</a></li>
+                    </ul>
+                    <h3 class="tit">绿植</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">绿色植物</a></li>
+                        <li><a href="">盆在花卉</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="nav_options lt">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">鲜花</a></li>
+                <li><a href="">永生花</a></li>
+                <li><a href="cake.html">蛋糕</a></li>
+                <li><a href="">礼品</a></li>
+                <li><a href="">巧克力</a></li>
+                <li><a href="">花语大全</a></li>
+                <li><a href="">设计师臻选鲜花</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 全部商品导航 end -->
+    <section id="main-top" class="clearFx">
+        <div class="top-bar">
+            <a href="#">首页</a>>
+            <a href="#">元祖蛋糕</a>>
+            <a href="#">清风有信（8寸）</a>
+        </div>
+        <div class="show">
+            <div class="showbig clearFx">
+                <ul>
+                    <li><img src="images/dateils-coke1.jpg" alt=""></li>
+                    <li><img src="images/dateils-coke2.jpg" alt=""></li>
+                    <li><img src="images/dateils-coke3.jpg" alt=""></li>
+                    <li><img src="images/dateils-coke4.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="showbuttom">
+                <span><img src="images/dateils-coke1.jpg" alt=""></span>
+                <span><img src="images/dateils-coke2.jpg" alt=""></span>
+                <span><img src="images/dateils-coke3.jpg" alt=""></span>
+                <span><img src="images/dateils-coke4.jpg" alt=""></span>
+            </div>
+        </div>
+        <div class="text-show">
+            <h3>清风有信(8寸)</h3>
+            <p><span>[元祖授权销售]</span>元祖慕斯蛋糕</p>
+            <div class="text-show-inner">
+                <div class="text-show-inner-top">
+                    <span>售价</span>
+                    <span><i>￥</i>298</span>
+                    <span>市场价<i class="line-through">￥398</i></span>
+                    <span id="hover-code"><i class="icon-mobile-phone"></i> 手机专享价<i>￥298</i></span>
+                    <span>已销售1347件</span>
+                </div>
+                <div class="codedb">
+                    <ul>
+                        <li>
+                            <img src="images/app_download_qrcode.png" alt="">
+                            <p> APP新人专享100元大礼包</p>
+                        </li>
+                        <li>
+                            <img src="images/tempqrpic.jpg" alt="">
+                            <p>微信公众号快捷购买</p>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="text-show-inner-sectionA">
+                    <table>
+                        <tr>
+                            <td>材料</td>
+                            <td>慕斯蛋糕</td>
+                        </tr>
+                        <tr>
+                            <td>包装</td>
+                            <td>一次性蛋糕用具1套</td>
+                        </tr>
+                        <tr>
+                            <td>备注</td>
+                            <td>摇动树叶如铃，在盛夏的午后，清风送来一封信小提示：因表层的慕斯酱较滑软，不宜裱字。保鲜时间：冷冻-18度以下45天，冷藏3~7度2天</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text-show-inner-sectionB">
+                    <ul class="one-layer clearFx">
+                        <li class="one-layer-one">配送说明</li>
+                        <li class="one-layer-two hid-text" flag="true">
+                            上海，重庆，成都，眉山，武汉，南京，德阳，无锡，苏州，常州，扬州，镇江，泰州，兴化，南通，徐州，淮安，盐城，宿迁，连云港，合肥，马鞍山，蚌埠，芜湖，滁州，黄山，资阳，简阳，攀枝花，绵阳，南充，泸州，宜宾，内江，自贡，乐山，遂宁，广元，广安，达州，西昌，贵阳，遵义，安顺，六盘水，西安，汉中，杭州，嘉兴，湖州，宁波，绍兴，台州，温州，金华，舟山，衢州，宜昌，鄂州，仙桃，荆州，荆门，黄石，孝感，十堰，襄阳，随州，潜江，南昌，九江，抚州，新余，郑州，洛阳，安阳，烟台，青岛，东营，济南，枣庄，长沙，福州，莆田，厦门，沈阳，大连，长春，广州，南宁，柳州，昆明，石家庄，邯郸，淄博，桂林，贵港，铜陵，黄冈，福建，宜兴<span
+                                class="icon-angle-down" id="touch-hid"></span></li>
+                    </ul>
+                    <ul class="one-layer clearFx">
+                        <li class="one-layer-one">配送至</li>
+                        <li class="one-layer-two on-layer-add">
+                            <div class="one-layer-two-out"><i>省/市/区</i> <span class="icon-angle-down"
+                                    id="touch-icon"></span></div>
+                            <div class="one-layer-two-in">
+                                <ul class="touch">
+                                    <li class="current" data-index="0">请选择</li>
+                                    <li class="hide" data-index="1">请选择</li>
+                                    <li class="hide" data-index="2">请选择</li>
+                                </ul>
+                                <ul class="touch-show">
+                                    <li class="current" data-index="0">
+                                        <span>北京</span>
+                                        <span>上海</span>
+                                        <span>广东</span>
+                                        <span>江苏</span>
+                                        <span>浙江</span>
+                                        <span>四川</span>
+                                        <span>山东</span>
+                                        <span>湖北</span>
+                                        <span>湖南</span>
+                                        <span>福建</span>
+                                        <span>陕西</span>
+                                        <span>河南</span>
+                                        <span>河北</span>
+                                        <span>重庆</span>
+                                        <span>辽宁</span>
+                                        <span>安徽</span>
+                                        <span>天津</span>
+                                        <span>江西</span>
+                                        <span>黑龙江</span>
+                                        <span>山西</span>
+                                        <span>贵州</span>
+                                        <span>广西</span>
+                                        <span>云南</span>
+                                        <span>新疆</span>
+                                        <span>吉林</span>
+                                        <span>甘肃</span>
+                                        <span>内蒙古</span>
+                                        <span>海南</span>
+                                        <span>宁夏</span>
+                                        <span>青海</span>
+                                        <span>西藏</span>
+                                        <span>香港</span>
+                                        <span>台湾</span>
+                                        <span>澳门</span>
+                                    </li>
+                                    <li class="hide" data-index="1" id="try-try">
+
+                                    </li>
+                                    <li class="hide" data-index="2"></li>
+                                </ul>
+
+                            </div>
+                            <p class="light">请选择配送区域</p>
+                        </li>
+                    </ul>
+                    <ul class="one-layer clearFx">
+                        <li class="one-layer-one">说明</li>
+                        <li class="one-layer-two "><span class="sigh icon-info-sign"></span> 一次性蛋糕用具1套</li>
+                    </ul>
+                    <ul class="one-layer clearFx">
+                        <li class="one-layer-one">选择</li>
+                        <li class="one-layer-two">
+                            <ul>
+                                <li class="checkbox checked-box"><a href="#" target="">8寸</a> <span
+                                        class="checked-img"></span></li>
+                                <li class="checkbox"><a href="#" target="">6寸</a> <span class=""></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="text-show-inner-bottom">
+                    <a href="#" class="radius-boxA"><span id="buycar-img"></span>加入购物车</a>
+                    <a href="./showcart.html" class="radius-boxB">立即购买</a>
+                    <a href="#"><span id="like-img" class="icon-star-empty"></span>收藏商品</a>
+                </div>
+                <ul id="right-fixed">
+                    <li class="code">
+                        <span class="right-fixed-style iconfont-iphone "></span>
+                        <span class="right-fixed-style">App</span>
+                        <div class="right-fixed-hid">
+                            <img src="images/app_download_qrcode.png" alt="">
+                            <p class="font1">使用花礼网APP</p>
+                            <p class="font2">随时随地看商品</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="right-fixed-style iconfont-buy"><i id="shop-number"></i><a href="./showcart.html"></a></span>
+                        <span class="right-fixed-style"><a href="./showcart.html">购物车 </a> </span>
+                    </li>
+                    <li>
+                        <span class="right-fixed-style iconfont-sevice"></span>
+                        <span class="right-fixed-style">在线客服</span>
+                    </li>
+                    <li class="tel">
+                        <span class="right-fixed-style iconfont-tel"></span>
+                        <span class="right-fixed-style">联系电话</span>
+                        <div class="right-fixed-hid">400-888-8888</div>
+                    </li>
+                    <li>
+                        <span class="right-fixed-style iconfont-feedback"></span>
+                        <span class="right-fixed-style">意见反馈</span>
+                    </li>
+                    <li>
+                        <span class="right-fixed-style iconfont-top"></span>
+                        <span class="right-fixed-style">返回顶部</span>
+                    </li>
+                </ul>
+                <div class="banner-tak">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="more-show clearFx">
+            <div class="more-show-header clearFx">
+                <img src="images/dateils-by_20201209183832475.jpg" alt="">
+                <h3>元祖</h3>
+                <a class="more-more" href="#">更多<i class="iconfont iconfont-arrow-right"></i></a>
+            </div>
+            <ul class="more-show-body clearFx">
+                <li>
+                    <img src="" alt="" data-original="images/dateils-5302017.jpg_220x240.jpg" class="lazy" width="165px"
+                        height="180px">
+                    <p>元祖蛋糕/甜蜜如心(8寸)</p>
+                    <p>￥298</p>
+                </li>
+                <li>
+                    <img src="" alt="" data-original="images/details-530 (1).jpg" class="lazy" width="165px"
+                        height="180px">
+                    <p>元祖蛋糕/甜蜜如心(8寸)</p>
+                    <p>￥298</p>
+                </li>
+                <li>
+                    <img src="" alt="" data-original="images/details-530 (2).jpg" class="lazy" width="165px"
+                        height="180px">
+                    <p>元祖蛋糕/甜蜜如心(8寸)</p>
+                    <p>￥298</p>
+                </li>
+                <li>
+                    <img src="" alt="" data-original="images/details-530 (3).jpg" class="lazy" width="165px"
+                        height="180px">
+                    <p>元祖蛋糕/甜蜜如心(8寸)</p>
+                    <p>￥298</p>
+                </li>
+                <li>
+                    <img src="" alt="" data-original="images/details-530 (4).jpg" class="lazy" width="165px"
+                        height="180px">
+                    <p>元祖蛋糕/甜蜜如心(8寸)</p>
+                    <p>￥298</p>
+                </li>
+                <li>
+                    <img src="" alt="" data-original="images/details-530 (5).jpg" class="lazy" width="165px"
+                        height="180px">
+                    <p>元祖蛋糕/甜蜜如心(8寸)</p>
+                    <p>￥298</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="wrap clearFx">
+        <aside>
+            <div class="his-make">
+                <h3>浏览记录</h3>
+                <span>暂无浏览记录！</span>
+            </div>
+            <div class="his-hot">
+                <h3>热销推荐</h3>
+                <ul>
+                    <li>
+                        <img src="" alt="" data-original="images/dateils-5302066.jpg_220x240.jpg" class="lazy"
+                            width="150px" height="163px">
+                        <p>情有独钟(8寸)</p>
+                        <p>￥258</p>
+                    </li>
+                    <li>
+                        <img src="" alt="" data-original="images/details-530 (1).jpg" class="lazy" width="150px"
+                            height="163px">
+                        <p>情有独钟(8寸)</p>
+                        <p>￥258</p>
+                    </li>
+                    <li>
+                        <img src="" alt="" data-original="images/details-530 (2).jpg" class="lazy" width="150px"
+                            height="163px">
+                        <p>情有独钟(8寸)</p>
+                        <p>￥258</p>
+                    </li>
+                    <li>
+                        <img src="" alt="" data-original="images/details-530 (3).jpg" class="lazy" width="150px"
+                            height="163px">
+                        <p>情有独钟(8寸)</p>
+                        <p>￥258</p>
+                    </li>
+                    <li>
+                        <img src="" alt="" data-original="images/details-530 (4).jpg" class="lazy" width="150px"
+                            height="163px">
+                        <p>情有独钟(8寸)</p>
+                        <p>￥258</p>
+                    </li>
+                    <li>
+                        <img src="" alt="" data-original="images/details-530 (5).jpg" class="lazy" width="150px"
+                            height="163px">
+                        <p>情有独钟(8寸)</p>
+                        <p>￥258</p>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section id="pbl-box">
+            <ul id="nav-bar" class="clearFx">
+                <li>
+                    商品详情
+                    <!-- 二级菜单 -->
+                    <div class="li-hover"></div>
+                </li>
+                <li>
+                    用户评价(<span>83</span>)
+                    <div></div>
+                </li>
+                <li>
+                    常见问题
+                    <div></div>
+                </li>
+                <li>
+                    购物保障
+                    <div></div>
+                </li>
+                <li>
+                    视频详情
+                    <div></div>
+                </li>
+                <div class="hide-price">
+                    ￥298
+                    <a href="./showcart.html" class="radius-boxC">立即购买</a>
+                </div>
+            </ul>
+            <div id="fullpage">
+                <div class="show-main-box section ">
+                    <div class="main-inner">
+                        <div id="main-inner-text" class="clearFx">
+                            <h4>产品参数</h4>
+                            <div></div>
+                            <table>
+                                <tr>
+                                    <td>编号</td>
+                                    <td>5302071</td>
+                                </tr>
+                                <tr>
+                                    <td>类别</td>
+                                    <td>元祖蛋糕</td>
+                                </tr>
+                                <tr>
+                                    <td>附送</td>
+                                    <td>下单填写留言，即免费赠送精美贺卡！</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="main-inner-img">
+                            <img src="images/dateils-by_20200602142819266.jpg" alt="">
+                            <img src="images/dateils-by_20200602142819578.jpg" alt="">
+                            <img src="images/dateils-by_20200602142820503.jpg" alt="">
+                            <img src="images/dateils-by_20200602142820717.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="section show-main-talk">
+                    <div class="show-main-talk-header">
+                        用户评价
+                    </div>
+                    <div class="show-main-talk-header-bottom">
+                        <a href="#">全部评价(85)</a> 
+                        <a href="#">查看当前商品评价</a>
+                        <a href="#">查看所有商品评价</a>
+                    </div>
+                    <ul>
+                        <li class="talk-bar">
+                            <ul class="clearFx">
+                                <li class="user-header"><img src="./images/details-132$.png" alt=""> </li>
+                                <li class="user-name">周*</li>
+                                <li class="user-options">
+                                    <p class="user-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    </p>
+                                    <p class="user-text">很新鲜 口感好 色 型不错 服务</p>
+                                    <div class="user-img">
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""> </div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                    </div>
+                                    <p class="user-add">江苏扬州市邗江区<span>2020-02-10</span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="talk-bar">
+                            <ul class="clearFx">
+                                <li class="user-header"><img src="./images/details-132$.png" alt=""> </li>
+                                <li class="user-name">周*</li>
+                                <li class="user-options">
+                                    <p class="user-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    </p>
+                                    <p class="user-text">很新鲜 口感好 色 型不错 服务</p>
+                                    <div class="user-img">
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""> </div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                    </div>
+                                    <p class="user-add">江苏扬州市邗江区<span>2020-02-10</span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="talk-bar">
+                            <ul class="clearFx">
+                                <li class="user-header"><img src="./images/details-132$.png" alt=""> </li>
+                                <li class="user-name">周*</li>
+                                <li class="user-options">
+                                    <p class="user-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    </p>
+                                    <p class="user-text">很新鲜 口感好 色 型不错 服务</p>
+                                    <div class="user-img">
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""> </div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                    </div>
+                                    <p class="user-add">江苏扬州市邗江区<span>2020-02-10</span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="talk-bar">
+                            <ul class="clearFx">
+                                <li class="user-header"><img src="./images/details-132$.png" alt=""> </li>
+                                <li class="user-name">周*</li>
+                                <li class="user-options">
+                                    <p class="user-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    </p>
+                                    <p class="user-text">很新鲜 口感好 色 型不错 服务</p>
+                                    <div class="user-img">
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""> </div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                        <div><img src="./images/index_user_comment_img4.jpg" alt=""></div>
+                                    </div>
+                                    <p class="user-add">江苏扬州市邗江区<span>2020-02-10</span></p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section show-main-qu">
+                    <div class="show-main-qu-header">
+                        常见问题
+                    </div>
+                    <div class="show-main-qu-header-bottom">
+                        <div class="header-bottom-question">
+                            <span>购买前如有问题，请向花礼网咨询。</span>
+                            <a href="#"><i class="iconfont iconfont-sevice"></i> 联系客服 </a>
+                        </div>
+                        <div class="header-bottom-question">
+                            <p class="qu-question-q">
+                                <i class="iconfont iconfont-q"></i>
+                                我订鲜花（或蛋糕）最快多久能送到？
+                            </p>
+                            <p class="qu-question-a">
+                            在您订购付款后，鲜花最快1-3个小时送到接收人手上。（注：此时间为可能的最快送货时间，我们会确保在您下单所选时间段内送达。）蛋糕一般提前半天订购就可以送到。
+                            </p>
+                        </div>
+                        <div class="header-bottom-question">
+                            <p class="qu-question-q">
+                                <i class="iconfont iconfont-q"></i>
+                                我订鲜花（或蛋糕）最快多久能送到？
+                            </p>
+                            <p class="qu-question-a">
+                            在您订购付款后，鲜花最快1-3个小时送到接收人手上。（注：此时间为可能的最快送货时间，我们会确保在您下单所选时间段内送达。）蛋糕一般提前半天订购就可以送到。
+                            </p>
+                        </div>
+                        <div class="header-bottom-question">
+                            <p class="qu-question-q">
+                                <i class="iconfont iconfont-q"></i>
+                                我订鲜花（或蛋糕）最快多久能送到？
+                            </p>
+                            <p class="qu-question-a">
+                            在您订购付款后，鲜花最快1-3个小时送到接收人手上。（注：此时间为可能的最快送货时间，我们会确保在您下单所选时间段内送达。）蛋糕一般提前半天订购就可以送到。
+                            </p>
+                        </div>
+                        <div class="header-bottom-question">
+                            <p class="qu-question-q">
+                                <i class="iconfont iconfont-q"></i>
+                                我订鲜花（或蛋糕）最快多久能送到？
+                            </p>
+                            <p class="qu-question-a">
+                            在您订购付款后，鲜花最快1-3个小时送到接收人手上。（注：此时间为可能的最快送货时间，我们会确保在您下单所选时间段内送达。）蛋糕一般提前半天订购就可以送到。
+                            </p>
+                        </div>
+                        <div class="header-bottom-question">
+                            <p class="qu-question-q">
+                                <i class="iconfont iconfont-q"></i>
+                                我订鲜花（或蛋糕）最快多久能送到？
+                            </p>
+                            <p class="qu-question-a">
+                            在您订购付款后，鲜花最快1-3个小时送到接收人手上。（注：此时间为可能的最快送货时间，我们会确保在您下单所选时间段内送达。）蛋糕一般提前半天订购就可以送到。
+                            </p>
+                        </div>
+                        <div class="header-bottom-question">
+                            <p class="qu-question-q">
+                                <i class="iconfont iconfont-q"></i>
+                                我订鲜花（或蛋糕）最快多久能送到？
+                            </p>
+                            <p class="qu-question-a">
+                            在您订购付款后，鲜花最快1-3个小时送到接收人手上。（注：此时间为可能的最快送货时间，我们会确保在您下单所选时间段内送达。）蛋糕一般提前半天订购就可以送到。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section show-main-save">
+                    <div class="show-main-save-header">
+                        购物保障
+                    </div>
+                    <div class="show-main-save-header-bottom">
+                        <div class="save-touch">
+                            <ul class="clearFx">
+                                <li class="save-touch-img save-show">
+                                    <a href="#">
+                                        <span class="save-touch-img-img img-imgs-1"></span>
+                                        <p>16年品牌</p>
+                                    </a>
+                                </li>
+                                <li class="save-touch-img">
+                                    <a href="#">
+                                        <span class="save-touch-img-img img-imgs-2"></span>
+                                        <p>销量领先</p>
+                                    </a>
+                                </li>
+                                <li class="save-touch-img">
+                                    <a href="#">
+                                        <span class="save-touch-img-img img-imgs-3"></span>
+                                        <p>百万客户信赖</p>
+                                    </a>
+                                </li>
+                                <li class="save-touch-img">
+                                    <a href="#">
+                                        <span class="save-touch-img-img img-imgs-4"></span>
+                                        <p>订单实拍</p>
+                                    </a>
+                                </li>
+                                <li class="save-touch-img">
+                                    <a href="#">
+                                        <span class="save-touch-img-img img-imgs-5"></span>
+                                        <p>3小时配送</p>
+                                    </a>
+                                </li>
+                                <li class="save-touch-img">
+                                    <a href="#">
+                                        <span class="save-touch-img-img img-imgs-6"></span>
+                                        <p>200%退赔承诺</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="save-show">
+                            <img src="images/details-server_01.jpg" alt="" class="show">
+                            <img src="images/details-server_02.jpg" alt="">
+                            <img src="images/details-server_03.jpg" alt="">
+                            <img src="images/details-server_04.jpg" alt="">
+                            <img src="images/details-server_05.jpg" alt="">
+                            <img src="images/details-server_06.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="section show-main-vedio">
+                    <div class="show-main-vedio-header">
+                        商品视频
+                    </div>
+                    <div class="show-main-vedio-header-bottom">
+                        <div class="container">
+                            <video  id="video">
+                                <source src="video/shg_51235344_50001_30d4ae23e7ff3e7db1506e0b8e84076b.f622.mp4">
+
+                                您的浏览器不支持该视频
+                            </video>
+                    
+                            <div class="video-bar">
+                                <!-- 播放暂停 -->
+                                <a href="#" class="play" id="play"></a>
+                                <a href="#" class="pause" id="pause"></a>
+                                <!-- 播放器进度条 -->
+                                <div class="progress-bar" id="progress-bar">
+                                    <div class="jd-bar" id="jd-bar">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <!-- 时间显示 -->
+                                <div class="time-bar">
+                                    <span class="current-time" id="current-time">00:00</span> /
+                                    <span class="all-time" id="all-time"></span>
+                                </div>
+                                <!-- 音量设置 -->
+                                <a href="#" class="volum-button"></a>
+                                <div class="volum-bar" id="volume-bar">
+                    
+                    
+                                    <div class="yl-bar" id="yl-bar">
+                                        <span class="volum-val"></span>
+                                    </div>
+                                </div>
+                                <!-- 全屏 -->
+                                <div id="full" class="full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <article></article>
+    <section></section>
+    <!-- 底部 start -->
+    <footer class="common_footer_box container">
+        <div class="options">
+            <a href="">首页</a>|
+            <a href="">关于我们</a>|
+            <a href="">媒体报道</a>|
+            <a href="">联系方式</a>|
+            <a href="">企业团购</a>|
+            <a href="">花店入驻</a>|
+            <a href="">友情链接</a>|
+            <a href="">在线补款</a>|
+            <a href="">为什么选择中国鲜花礼品网</a>
+        </div>
+        <div class="ft_logo">
+            <img src="images/slogan.png" alt="">
+            <img src="images/100.jpg" alt="">
+            <img src="images/bico1.jpg" alt="">
+            <img src="images/govIcon.gif" alt="" height="50px">
+        </div>
+        <div class="permit">
+            <p>
+                <a href="">中国花卉协会会员</a>
+                <a href="">中国电子商务协会会员</a>
+                ICP经营许可证：
+                <a href="">粤B2-20050744</a> |
+                <a href="">粤ICP备09171662号</a>
+                粤公网安备44030502000373号 Copyright © 2005-2021
+            </p>
+            <p>
+                花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+            </p>
+        </div>
+    </footer>
+    <!-- 底部 end -->
+</body>
+
+</html>

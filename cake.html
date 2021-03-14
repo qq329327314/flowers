@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cake.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- 头部 start -->
+    <header class="common_head_box">
+        <div class="head_box container clearfix">
+            <!-- lt_nav -->
+            <ul class="lt_nav clearfix">
+                <li>
+                    <a href="#"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>关注微信</a>
+                    <div class="menu">
+                        <img src="images/login_wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注<br>
+                            回复“礼物”更多惊喜
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>花礼网app</a>
+                    <div class="menu">
+                        <img src="images/login_download_qrcode.png" alt="">
+                        <p>新人专属100元APP礼包</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- rt_nav -->
+            <ul class="rt_nav clearfix">
+                <li>
+                    <a href="login.html" class="login">您好，请登录</a>
+                    <a href="enroll.html" class="register">注册</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="serve.html">订单查询</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="">我的花礼</a>
+                </li>
+                <li class="line">|</li>
+                <li class="customer_service">
+                    <a href="serve.html">客户服务<span class="triangle_icon"></span></a>
+                    <ul class="service_list">
+                        <li><a>在线付款</a></li>
+                        <li><a>帮助中心</a></li>
+                        <li><a>售后服务</a></li>
+                        <li><a>配送范围</a></li>
+                        <li><a>留言反馈</a></li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li class="shop_cart">
+                    <a href="showcart.html" class="shop_cart_link">购物车</a>
+                    <!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+                    <ul class="empty_shop_list">
+                        <li class="empty">您的购物车中没有商品，先去选购把！</li>
+                    </ul>
+                    <!-- 购物车有内容时显示的列表 -->
+                    <ul class="shop_list">
+                        <li>
+                            <img src="images/pic16.jpg" alt="" class="lt">
+                            <p class="shop_introduce lt">
+                                韩式系列/初心不负— 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利1
+                            </p>
+                            <div class="count_box lt">
+                                <i class="cut">-</i>
+                                <span class="count">1</span>
+                                <i class="add">+</i>
+                            </div>
+                            <span class="price rt">￥239</span>
+                        </li>
+                        <li class="settlement">
+                            <span class="shop_count">1</span>件总计:<span class="total_price">￥239</span>
+                            <a href="showcart.html" class="goto_settlement rt">去购物车结算</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">中国鲜花礼品网：中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- 头部 end -->
+
+
+    <!-- 搜索区 start -->
+    <section class="common_search_box container">
+        <a href="index.html" class="huali_logo lt">
+            <img src="images/pc_hualogo.png" alt="">
+        </a>
+        <div class="search_box lt">
+            <div class="user_search">
+                <form action="search.html">
+                    <input type="text" class="user_import lt" placeholder="商品关键词">
+                    <button class="search_btn lt">搜索</button>
+                </form>
+                <ul class="search_data_list">
+                    <!-- <li><a href="">1111111</a></li>
+                        <li><a href="">iosfjfn</a></li> -->
+                </ul>
+            </div>
+
+            <p class="hot">
+                <a href="">红玫瑰</a>|<a href="">水生花</a>|<a href="">生日鲜花</a>|<a href="">金玫瑰</a>
+            </p>
+        </div>
+
+        <div class="rt_consult_box rt">
+            <span class="phone_consult"></span>
+            400-889-8188
+            <em class="line">|</em>
+            <a href="" class="on_line_service">
+                <i class="icon"></i>
+                在线客服
+            </a>
+        </div>
+    </section>
+    <!-- 搜索区 end -->
+
+
+    <!-- 全部商品导航 start -->
+    <nav class="common_total_shop_nav">
+        <div class="container clearfix">
+            <div class="total_shop_box lt">
+                <h3 class="total_tit">全部商品导购<i class="icon"></i></h3>
+                <!-- menu -->
+                <div class="menu_box">
+                    <h3 class="tit">鲜花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">爱情鲜花</a></li>
+                        <li><a href="">生日鲜花</a></li>
+                        <li><a href="">友情鲜花</a></li>
+                        <li><a href="">问候长辈</a></li>
+                        <li><a href="">祝贺鲜花</a></li>
+                        <li><a href="">婚庆鲜花</a></li>
+                        <li><a href="">探病慰问</a></li>
+                        <li><a href="">道歉鲜花</a></li>
+                        <li><a href="">开业花篮</a></li>
+                    </ul>
+                    <h3 class="tit">永生花</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">经典花盒</a></li>
+                        <li><a href="">巨型玫瑰</a></li>
+                        <li><a href="">薰衣草</a></li>
+                        <li><a href="">永生瓶花</a></li>
+                        <li><a href="">特色永生花</a></li>
+                    </ul>
+                    <h3 class="tit">礼品</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">泰国保鲜花</a></li>
+                        <li><a href="">音乐盒</a></li>
+                        <li><a href="">水晶内雕</a></li>
+                        <li><a href="">金箔花</a></li>
+                        <li><a href="">化妆镜</a></li>
+                        <li><a href="">香薰系列</a></li>
+                        <li><a href="">音乐睡枕</a></li>
+                        <li><a href="">花瓶/相框</a></li>
+                        <li><a href="">卡通花束</a></li>
+                        <li><a href="">品牌公仔</a></li>
+                        <li><a href="">首饰</a></li>
+                        <li><a href="">Giftstalk精选</a></li>
+                        <li><a href="">创意礼品</a></li>
+                        <li><a href="">礼品卡</a></li>
+                        <li><a href="">多肉植物盆栽</a></li>
+                    </ul>
+                    <h3 class="tit">绿植</h3>
+                    <ul class="options_list clearfix">
+                        <li><a href="">绿色植物</a></li>
+                        <li><a href="">盆在花卉</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="nav_options lt">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="search.html">鲜花</a></li>
+                <li><a href="">永生花</a></li>
+                <li><a href="">蛋糕</a></li>
+                <li><a href="">礼品</a></li>
+                <li><a href="">巧克力</a></li>
+                <li><a href="">花语大全</a></li>
+                <li><a href="">设计师臻选鲜花</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 全部商品导航 end -->
+    <!-- 主体内容 -->
+    <section class="wrap">
+        <div class="city_xz">
+            <!-- 热门城市 -->
+            <p class="hot_city">
+                <span class="color1">热门城市</span><a href="#">北京蛋糕</a>
+                <a href="#">上海蛋糕</a><a href="#">广州蛋糕</a>
+                <a href="#">深圳蛋糕</a><a href="#">天津蛋糕</a>
+                <a href="#">重庆蛋糕</a><a href="#">武汉蛋糕</a>
+                <a href="#">杭州蛋糕</a><span class="color2">共开通了<i>1000多</i>个城市蛋糕配送</span>
+            </p>
+            <!-- 快速查找 -->
+            <p class="fast_search">
+                <span class="color1">快速查找</span>
+                <span class="border">
+                    <select id="shengfen">
+                        <option value="0">选择省份</option>
+                    </select>
+                </span>
+                <span class="border">
+                    <select id="city">
+                        <option value="0">城市选择</option>
+                    </select>
+                </span>
+                <button id="btm">进入</button>
+                <span class="input_sitys">
+                    <input type="text" placeholder="请输入蛋糕配送城市" id="input_sity">
+                    <input type="button" class="subm">
+                </span>
+            </p>
+            <!-- 按字母查找 -->
+            <div class="zimu">
+                <span class="left">按拼音首字母选择</span>
+                <span class="right">
+                    <a href="#">A</a><a href="#">B</a><a href="#">C</a>
+                    <a href="#">D</a><a href="#">E</a><a href="#">F</a>
+                    <a href="#">G</a><a href="#">H</a>
+                    <a href="#">I</a><a href="#">J</a><a href="#">K</a>
+                    <a href="#">L</a><a href="#">M</a><a href="#">N</a>
+                    <a href="#">O</a><a href="#">P</a><a href="#">Q</a>
+                    <a href="#">R</a><a href="#">S</a><a href="#">T</a>
+                    <a href="#">U</a><a href="#">V</a><a href="#">W</a>
+                    <a href="#">X</a><a href="#">Y</a><a href="#">Z</a>
+                </span>
+            </div>
+            <!-- 城市区 -->
+            <div class="address clear">
+                <p class="left_city">华北、东北</p>
+                <p class="right_city">
+                    <span class="font_color"><a href="#">北京</a></span>
+                    <span class="font_color"><a href="#">天津</a></span>
+                    <span class="font_color"><a href="#">石家庄</a></span>
+                    <span class="font_color"><a href="#">唐山</a></span>
+                    <span><a href="#">邯郸</a></span>
+                    <span><a href="#">沧州</a></span>
+                    <span><a href="#">保定</a></span>
+                    <span><a href="#">廊坊</a></span>
+                    <span><a href="#">邢台</a></span>
+                    <span><a href="#">张家口</a></span>
+                    <span><a href="#">秦皇岛</a></span>
+                    <span><a href="#">武安</a></span>
+                    <span class="font_color"><a href="#">呼和浩特</a></span>
+                    <span><a href="#">鄂尔多斯</a></span>
+                    <span><a href="#">包头</a></span>
+                    <span class="font_color"><a href="#">太原</a></span>
+                    <span><a href="#">大同</a></span>
+                    <span><a href="#">阳泉</a></span>
+                    <span><a href="#">晋城</a></span>
+                    <span class="font_color"><a href="#">沈阳</a></span>
+                    <span class="font_color"><a href="#">大连</a></span>
+                    <span><a href="#">鞍山</a></span>
+                    <span><a href="#">本溪</a></span>
+                    <span><a href="#">盘锦</a></span>
+                    <span><a href="#">锦州</a></span>
+                    <span><a href="#">抚顺</a></span>
+                    <span><a href="#">丹东</a></span>
+                    <span><a href="#">辽阳</a></span>
+                    <span><a href="#">朝阳</a></span>
+                    <span><a href="#">铁岭</a></span>
+                    <span><a href="#">阜新</a></span>
+                    <span><a href="#">葫芦岛</a></span>
+                    <span><a href="#">哈尔滨</a></span>
+                    <span><a href="#">大庆</a></span>
+                    <span><a href="#">齐齐哈尔</a></span>
+                    <span><a href="#">牡丹江</a></span>
+                    <span><a href="#">佳木斯</a></span>
+                    <span class="font_color"><a href="#">长春</a></span>
+                    <span><a href="#">吉林</a></span>
+                    <span><a href="#">延吉</a></span>
+                </p>
+            </div>
+            <div class="address clear">
+                <p class="left_city">华东地区</p>
+                <p class="right_city">
+                    <span class="font_color"><a href="#">上海</a></span>
+                    <span class="font_color"><a href="#">南京</a></span>
+                    <span class="font_color"><a href="#">苏州</a></span>
+                    <span class="font_color"><a href="#">无锡</a></span>
+                    <span><a href="#">南通</a></span>
+                    <span><a href="#">徐州</a></span>
+                    <span><a href="#">常州</a></span>
+                    <span><a href="#">盐城</a></span>
+                    <span><a href="#">扬州</a></span>
+                    <span><a href="#">泰州</a></span>
+                    <span><a href="#">镇江</a></span>
+                    <span><a href="#">淮安</a></span>
+                    <span><a href="#">连云港</a></span>
+                    <span><a href="#">宿迁</a></span>
+                    <span><a href="#">昆山</a></span>
+                    <span><a href="#">江阴</a></span>
+                    <span class="font_color"><a href="#">杭州</a></span>
+                    <span class="font_color"><a href="#">宁波</a></span>
+                    <span class="font_color"><a href="#">温州</a></span>
+                    <span><a href="#">绍兴</a></span>
+                    <span><a href="#">台州</a></span>
+                    <span><a href="#">嘉兴</a></span>
+                    <span><a href="#">金华</a></span>
+                    <span><a href="#">湖州</a></span>
+                    <span><a href="#">舟山</a></span>
+                    <span><a href="#">丽水</a></span>
+                    <span><a href="#">衢州</a></span>
+                    <span class="font_color"><a href="#">济南</a></span>
+                    <span class="font_color"><a href="#">青岛</a></span>
+                    <span class="font_color"><a href="#">烟台</a></span>
+                    <span><a href="#">潍坊</a></span>
+                    <span><a href="#">淄博</a></span>
+                    <span><a href="#">济宁</a></span>
+                    <span><a href="#">临沂</a></span>
+                    <span><a href="#">东营</a></span>
+                    <span><a href="#">泰安</a></span>
+                    <span><a href="#">威海</a></span>
+                    <span><a href="#">枣庄</a></span>
+                    <span><a href="#">日照</a></span>
+                    <span><a href="#">滨州</a></span>
+                    <span><a href="#">菏泽</a></span>
+                    <span class="font_color"><a href="#">福州</a></span>
+                    <span><a href="#">厦门</a></span>
+                    <span><a href="#">泉州</a></span>
+                    <span><a href="#">莆田</a></span>
+                    <span class="font_color"><a href="#">合肥</a></span>
+                    <span><a href="#">芜湖</a></span>
+                    <span><a href="#">滁州</a></span>
+                    <span><a href="#">黄山</a></span>
+                    <span><a href="#">铜陵</a></span>
+                    <span><a href="#">马鞍山</a></span>
+                    <span><a href="#">蚌埠</a></span>
+                    <span class="font_color"><a href="#">南昌</a></span>
+                    <span><a href="#">赣州</a></span>
+                    <span><a href="#">九江</a></span>
+                    <span><a href="#">抚州</a></span>
+                    <span><a href="#">新余</a></span>
+                    <span><a href="#">景德镇</a></span>
+                </p>
+            </div>
+            <div class="address clear">
+                <p class="left_city">华南、华中</p>
+                <p class="right_city">
+                    <span class="font_color"><a href="#">广州</a></span>
+                    <span class="font_color"><a href="#">深圳</a></span>
+                    <span><a href="#">佛山</a></span>
+                    <span><a href="#">东莞</a></span>
+                    <span><a href="#">珠海</a></span>
+                    <span><a href="#">惠州</a></span>
+                    <span><a href="#">中山</a></span>
+                    <span><a href="#">茂名</a></span>
+                    <span><a href="#">湛江</a></span>
+                    <span><a href="#">江门</a></span>
+                    <span><a href="#">汕头</a></span>
+                    <span class="font_color"><a href="#">南宁</a></span>
+                    <span><a href="#">柳州</a></span>
+                    <span><a href="#">桂林</a></span>
+                    <span><a href="#">贵港</a></span>
+                    <span class="font_color"><a href="#">海口</a></span>
+                    <span><a href="#">三亚</a></span>
+                    <span class="font_color"><a href="#">武汉</a></span>
+                    <span><a href="#">宜昌</a></span>
+                    <span><a href="#">襄阳</a></span>
+                    <span><a href="#">荆州</a></span>
+                    <span><a href="#">黄石</a></span>
+                    <span><a href="#">鄂州</a></span>
+                    <span><a href="#">孝感</a></span>
+                    <span><a href="#">荆门</a></span>
+                    <span><a href="#">十堰</a></span>
+                    <span><a href="#">潜江</a></span>
+                    <span><a href="#">随州</a></span>
+                    <span><a href="#">仙桃</a></span>
+                    <span class="font_color"><a href="#">郑州</a></span>
+                    <span><a href="#">洛阳</a></span>
+                    <span><a href="#">许昌</a></span>
+                    <span><a href="#">焦作</a></span>
+                    <span><a href="#">安阳</a></span>
+                    <span><a href="#">信阳</a></span>
+                    <span><a href="#">驻马店</a></span>
+                    <span><a href="#">平顶山</a></span>
+                    <span><a href="#">开封</a></span>
+                    <span class="font_color"><a href="#">长沙</a></span>
+                    <span><a href="#">株洲</a></span>
+                    <span><a href="#">湘潭</a></span>
+                    <span><a href="#">郴州</a></span>
+                </p>
+            </div>
+            <div class="address clear">
+                <p class="left_city">西南、西北</p>
+                <p class="right_city">
+                    <span class="font_color"><a href="#">重庆</a></span>
+                    <span class="font_color"><a href="#">成都</a></span>
+                    <span><a href="#">绵阳</a></span>
+                    <span><a href="#">德阳</a></span>
+                    <span><a href="#">宜宾</a></span>
+                    <span><a href="#">南充</a></span>
+                    <span><a href="#">内江</a></span>
+                    <span><a href="#">眉山</a></span>
+                    <span><a href="#">乐山</a></span>
+                    <span><a href="#">雅安</a></span>
+                    <span><a href="#">泸州</a></span>
+                    <span><a href="#">达州</a></span>
+                    <span><a href="#">攀枝花</a></span>
+                    <span><a href="#">遂宁</a></span>
+                    <span><a href="#">自贡</a></span>
+                    <span><a href="#">广安</a></span>
+                    <span><a href="#">广元</a></span>
+                    <span><a href="#">西昌</a></span>
+                    <span><a href="#">资阳</a></span>
+                    <span><a href="#">简阳</a></span>
+                    <span><a href="#">都江堰</a></span>
+                    <span><a href="#">峨眉山</a></span>
+                    <span class="font_color"><a href="#">昆明</a></span>
+                    <span><a href="#">曲靖</a></span>
+                    <span class="font_color"><a href="#">贵阳</a></span>
+                    <span><a href="#">遵义</a></span>
+                    <span><a href="#">安顺</a></span>
+                    <span><a href="#">六盘水</a></span>
+                    <span class="font_color"><a href="#">西安</a></span>
+                    <span><a href="#">榆林</a></span>
+                    <span><a href="#">咸阳</a></span>
+                    <span><a href="#">宝鸡</a></span>
+                    <span><a href="#">汉中</a></span>
+                    <span><a href="#">延安</a></span>
+                    <span class="font_color"><a href="#">兰州</a></span>
+                    <span><a href="#">西宁</a></span>
+                    <span><a href="#">银川</a></span>
+                    <span><a href="#">拉萨</a></span>
+                    <span class="font_color"><a href="#">乌鲁木齐</a></span>
+                </p>
+            </div>
+        </div>
+        <!--商品展示区  -->
+        <div class="rap clear shopping">
+            <!-- 商品展示区左侧 -->
+            <div class="left_box clear">
+                <!-- 左上 -->
+                <div class="top">
+                    <div class="top1 clear">
+                        <div class="pics">
+                            <p class="pic"></p><span class="colors">品牌</span>
+                        </div>
+                        <div class="fonts">
+                            <ul>
+                                <li><a href="#">元祖蛋糕</a></li>
+                                <li><a href="#">廿一客蛋糕</a></li>
+                                <li><a href="#">诺心蛋糕</a></li>
+                                <li><a href="#">贝思客蛋糕</a></li>
+                                <li><a href="#">BONCAKE</a></li>
+                                <li><a href="#">Mcake蛋糕</a></li>
+                                <li><a href="#">窝夫小子</a></li>
+                                <li><a href="#">米卡米卡</a></li>
+                                <li><a href="#">幸福西饼</a></li>
+                                <li><a href="#">Vcake蛋糕</a></li>
+                                <li><a href="#">心之和蛋糕</a></li>
+                                <li><a href="#">CAKEBOSS</a></li>
+                                <li><a href="#">派悦坊</a></li>
+                                <li><a href="#">黑池</a></li>
+                                <li><a href="#">巴黎贝甜</a></li>
+                                <li><a href="#">全国蛋糕</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="top2 clear">
+                        <div class="pics">
+                            <p class="pic"></p><span class="colors">分类</span>
+                        </div>
+                        <div class="fonts">
+                            <ul>
+                                <li><a href="#">鲜奶蛋糕</a></li>
+                                <li><a href="#">水果蛋糕</a></li>
+                                <li><a href="#">巧克力蛋糕</a></li>
+                                <li><a href="#">慕斯蛋糕</a></li>
+                                <li><a href="#">无糖蛋糕</a></li>
+                                <li><a href="#">生肖蛋糕</a></li>
+                                <li><a href="#">情人蛋糕</a></li>
+                                <li><a href="#">婚庆蛋糕</a></li>
+                                <li><a href="#">祝寿蛋糕</a></li>
+                                <li><a href="#">儿童蛋糕</a></li>
+                                <li><a href="#">欧式蛋糕</a></li>
+                                <li><a href="#">节庆蛋糕</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 左中 -->
+                <div class="left_middle">
+                    <h1>热销生日蛋糕推荐</h1>
+                    <ul>
+                        <li>
+                            <p class="pics1"><img src="images/5014011.jpg_220x240.jpg" alt=""></p>
+                            <p class="fonts"><a href="#">蛋糕/心相印-8寸(2磅)心形粉色鲜奶蛋糕</a></p>
+                            <p class="money">¥ 168</p>
+                        </li>
+                        <li>
+                            <p class="pics1"><img src="images/5010042.jpg_220x240.jpg" alt=""></p>
+                            <p class="fonts"><a href="#">蛋糕/鲜果缤纷-2磅(8寸)水果蛋糕</a></p>
+                            <p class="money">¥ 179</p>
+                        </li>
+                        <li>
+                            <p class="pics1"><img src="images/5010025.jpg_220x240.jpg" alt=""></p>
+                            <p class="fonts"><a href="#">蛋糕/心之恋曲-2磅(8寸)鲜奶水果蛋糕</a></p>
+                            <p class="money">¥ 178</p>
+                        </li>
+                        <li>
+                            <p class="pics1"><img src="images/5010046.jpg_220x240.jpg" alt=""></p>
+                            <p class="fonts"><a href="#">蛋糕/水果盛宴-2磅(8寸)水果蛋糕</a></p>
+                            <p class="money">¥ 179</p>
+                        </li>
+                        <li>
+                            <p class="pics1"><img src="images/5010044.jpg_220x240.jpg" alt=""></p>
+                            <p class="fonts"><a href="#">蛋糕/欢声乐语-2磅(8寸)水果蛋糕</a></p>
+                            <p class="money">¥ 179</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 左下 -->
+                <div class="left_bottom">
+                    <h1>最新生日蛋糕评价</h1>
+                    <ul>
+                        <li class="clear">
+                            <p class="pics pic1"></p>
+                            <div class="right">
+                                <p>会员号：liute*</p>
+                                <a href="#">好吃，就是太小了</a>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <p class="pics pic2"></p>
+                            <div class="right">
+                                <p>会员号：wangwei*</p>
+                                <a href="#">典雅高贵的容颜，完美的图案设计，漂亮！色</a>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <p class="pics pic3"></p>
+                            <div class="right">
+                                <p>会员号：137****8949</p>
+                                <a href="#">服务很到位！</a>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <p class="pics pic4"></p>
+                            <div class="right">
+                                <p>会员号：hanyaji*</p>
+                                <a href="#">蛋糕非常好吃</a>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <p class="pics pic5"></p>
+                            <div class="right">
+                                <p>会员号：wanglih*</p>
+                                <a href="#">服务非常周到，非常及时，老人反馈蛋糕很好</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 商品展示区右侧 -->
+            <!-- 1 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">元祖蛋糕<span>（可配送上海市等国内100多个城市）</span></p>
+                        <p class="right"><a href="#">更多元祖蛋糕>></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/cake_brand_s_04.jpg" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>元祖是2010上海世博会糕点赞助商，源自台湾，以原料上乘工艺精湛著称，是家喻户晓的精致礼品代言者。</p>
+                        <p class="last">
+                            元祖蛋糕可配送：上海,南京,苏州,无锡,杭州,宁波,天津,贵阳,郑州,重庆,合肥,济南,青岛,烟台,长沙,成都,武汉,大连,沈阳,福州,厦门,南昌,广州,南宁,石家庄,西安,太原,昆明,长春,温州,湖州,嘉兴,金华,丽水,衢州,绍兴,台州,舟山,镇江,盐城,扬州,常州,淮安,连云港,南通,泰州,烟台等共100多个城市。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5302071.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥298</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">元祖授权销售</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5302017.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥258</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">元祖授权销售</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5302066.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥258</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">元祖授权销售</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5302015.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥258</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">元祖授权销售</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 2 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">廿一客蛋糕<span>（可配送北京，上海，广州，深圳，天津，杭州，苏州，无锡）</span></p>
+                        <p class="right"><a href="#">更多廿一客蛋糕 >></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/cake_brand_21cake.png" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>廿一客蛋糕（21Cake)，只做新鲜的方形蛋糕。现已来到更多城市。在世界范围，研究蛋糕食材内涵，创造高价值单品。</p>
+                        <p class="last">廿一客配送城市：北京，上海，广州，深圳，天津，杭州，苏州，无锡</p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5222025.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥206</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">玫瑰造型 送给最爱得人</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5221029.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥206</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">玫瑰造型 送给最爱得人</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5221035.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥276</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">玫瑰造型 送给最爱得人</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5221004.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥276</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">玫瑰造型 送给最爱得人</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 3 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">诺心蛋糕 <span>(可配送上海，杭州，南京，苏州等10多个城市)</span></p>
+                        <p class="right"><a href="#">更多廿一客蛋糕 >></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/cake_brand_s_10.jpg" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>“诺心蛋糕LE CAKE”-诺心LE CAKE 致力提供高品质及美味的蛋糕食品，高质及安心的精品蛋糕品牌。诺心LE
+                            CAKE秉承精选世界各地的优质食材原料，通过自建中央工厂生产制作优质的黄金比例配方蛋糕,全程冷链配送，将新鲜的蛋糕直送上门。</p>
+                        <p class="last">诺心蛋糕配送城市：上海，杭州，南京，苏州，宁波，无锡，绍兴，嘉兴，北京，天津，广州，深圳，成都，重庆。注：需要提前24小时订购。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010020.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥258</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">惊喜 不用刻意安排</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010025.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥218</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">惊喜 不用刻意安排</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010027.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥218</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">惊喜 不用刻意安排</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010031.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">￥298</p>
+                            <p><a href="#">元祖蛋糕/清风有信(8寸)-元祖慕斯蛋糕<span class="color">惊喜 不用刻意安排</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 4 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">BONCAKE蛋糕 <span>(可配送北京、上海、天津、沈阳)</span></p>
+                        <p class="right"><a href="#">更多BONCAKE蛋糕 >></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/boncake.png" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>1886年，第一代BON叔在巴黎街头开设了一家甜品店，他一直用微笑和色彩温暖着他的客人。 2009年一位国立凡尔赛美术学院的新锐设计师， 一位蓝带桀
+                            骜不驯的优秀的年轻厨师和一位勒芒大学主修心理学和色彩学的年轻心理咨询师加入到产品的研发之中， 用他们的热情和自己擅长的专业知识， 碰撞出 BON CAKE 色彩系列蛋糕，
+                            并且登上了2009年《Cake Craft & Decoration》著名杂志的专访。 2014年 BON CAKE 强势进入中国，我们带着最好的产品和微笑与大家见面，
+                            我们是用色彩传递快乐的新锐甜品专家。</p>
+                        <p class="last">BONCAKE可配送北京、上海、天津、沈阳。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010034.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 268</p>
+                            <p><a href="#">BONCAKE蛋糕/蓝色星球（6寸）-<span class="color">星空造型</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010041.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 268</p>
+                            <p><a href="#">BONCAKE蛋糕/桃红星球（6寸）-<span class="color">星空造型</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010042.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 268</p>
+                            <p><a href="#">BONCAKE蛋糕/桃红星球（6寸）-<span class="color">星空造型</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010043.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 268</p>
+                            <p><a href="#">BONCAKE蛋糕/桃红星球（6寸）-<span class="color">星空造型</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 5 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">Mcake蛋糕 <span>(可配送上海，杭州，苏州，北京共4个城市)</span></p>
+                        <p class="right"><a href="#">更多Mcake蛋糕 >></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/boncake.png" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>“Mcake蛋糕”-Mcake把法国传统蛋糕文化带入中国，提供纯正的欧式味觉体验，同时也将欧洲的上好材质、经典工艺以及优雅的文艺气质，融入产品的每一个细节之中，带给客户更多的享受与愉悦。
+                        </p>
+                        <p class="last">Mcake蛋糕配送城市：上海，杭州，苏州，北京。**注**：请提前5小时预订，苏州请提前8小时预订。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010044.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 298</p>
+                            <p><a href="#">Mcake蛋糕/鲜莓印雪-新鲜草莓奶油拿破仑<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010046.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 298</p>
+                            <p><a href="#">Mcake蛋糕/小熊动物造型芝士味生日儿童生<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5010045.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 318</p>
+                            <p><a href="#">Mcake蛋糕/榛果摩卡布拉吉（2磅）-巧克力<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5112008.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 298</p>
+                            <p><a href="#">Mcake蛋糕/蔓越莓红丝绒奶油生日宴会蛋<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 6 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">窝夫小子蛋糕 <span>(可配送北京、上海两个城市)</span></p>
+                        <p class="right"><a href="#">更多窝夫小子蛋糕 >></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/cake_brand_s_02.jpg" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>窝夫小子是极具异国情调的蛋糕品牌，以欧洲饮食文化为背景，采撷天然纯正食材，精选世界顶级原料制作，荟萃欧洲蛋糕经典，烘焙世界美味，在中国烘焙行业树立起了鲜明的形象。</p>
+                        <p class="last">窝夫小子蛋糕配送城市：北京、上海。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5112018.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 159</p>
+                            <p><a href="#">窝夫小子蛋糕/鲜奶水果(6寸)-窝夫小子鲜<span class="color">请至少提前6小时订购</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5112024.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 329</p>
+                            <p><a href="#">窝夫小子蛋糕/汪来了（8寸）-巧克力蛋糕<span class="color">请至少提前6小时订购</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5241003.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 318</p>
+                            <p><a href="#">窝夫小子蛋糕/蓝莓甜心（6寸）-窝夫小子<span class="color">请至少提前6小时订购</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5142009.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 179</p>
+                            <p><a href="#">窝夫小子蛋糕/情人玫瑰芝士（6寸）-窝夫<span class="color">请至少提前6小时订购</span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 7 -->
+            <div class="right_box clear">
+                <div class="present clear">
+                    <div class="pink clear">
+                        <p class="left">米卡米卡蛋糕 <span>(可免费配送北京六环以内，天津市区六区内)</span></p>
+                        <p class="right"><a href="#">更多窝夫小子蛋糕 >></a></p>
+                    </div>
+                    <div class="pics">
+                        <a href="#"><img src="images/cake_brand_s_02.jpg" alt=""></a>
+                    </div>
+                    <div class="fonts">
+                        <p>“米卡米卡蛋糕Micamika”-米卡米卡蛋糕成立于2010年6月，为北京地区的消费者提供欧式蛋糕预订、配送服务。欧式蛋糕：28款欧式蛋糕，19个国家的优质原料，拒绝繁复、色彩膨胀的油脂造型，绝不添加任何人工色素等非天然原料。
+                        </p>
+                        <p class="last">米卡米卡蛋糕配送城市：北京，天津。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="picrues">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5702002.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 257</p>
+                            <p><a href="#">米卡米卡蛋糕/请叫我奔放的小野马！（1<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5702043.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 297</p>
+                            <p><a href="#">米卡米卡蛋糕/浓情巧克力 Sweet Chocola<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5702064.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 297</p>
+                            <p><a href="#">米卡米卡蛋糕/小愿旺（1.5磅）-奶油慕斯<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div><img class="lazy" data-original="images/5702016.jpg_220x240.jpg" width="400"
+                                    height="300"></div>
+                            <p class="money">¥ 217</p>
+                            <p><a href="#">米卡米卡蛋糕/至纯淡乳酪 （1.5磅）-米卡<span class="color"></span></a></p>
+                            <div class="fonts clear">
+                                <a href="#">
+                                    <p class="xinx"><span class="picx"></span><span>收藏</span></p>
+                                </a>
+                                <a href="#">
+                                    <p class="cars"><span class="car"></span><span>加入购物车</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 8 -->
+
+        </div>
+        <!-- 固定广告 -->
+        <div class="guanggao">
+            <a href="#"><span class="weixin"></span><span class="funt">咨询客服</span></a>
+        </div>
+        <div class="guanggao_right">
+            <ul>
+                <li class="head hovers">
+                    <div class="hears">
+                        <span class="pics"></span>
+                        <p class="pic"></p>
+                        <p class="pic1">你好，请<a href="#">登录</a>|<a href="#">注册</a></p>
+                        <a href="#">
+                            <p class="pic2"><span></span>我的订单</p>
+                        </a>
+                    </div>
+                </li>
+                <div class="hovers">
+                    <a href="showcart.html">
+                        <p class="shop">
+                            <span class="car"></span>
+                            <span class="font">购物车</span><span class="current">0</span>
+                        </p>
+                    </a>
+                </div>
+                <a href="#">
+                    <li class="xinx hovers">
+                        <div class="xinxin animation">
+                            <p class="pics1"></p>
+                            <a href="#">我的收藏</a>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="chakan hovers">
+                        <div class="chakans animation">
+                            <p class="pics1"></p>
+                            <a href="#">最近查看</a>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="phone hovers">
+                        <div class="phones animation">
+                            <p class="pics1"></p>
+                            <a href="#">400-889-8188</a>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="zaixian hovers">
+                        <div class="zaixians animation">
+                            <p class="pics1"></p>
+                            <a href="#">在线客服</a>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="erweima hovers">
+                        <div class="erweimas">
+                            <p class="pics1"></p>
+                            <div class="weixin clear">
+                                <img src="images/wxguanjia_qrcode.png" wigth="105" height="105">
+                                <p>关注微信公众号</p>
+                            </div>
+                            <div class="huali">
+                                <img src="images/app_download_qrcode.png" wigth="105" height="105">
+                                <p>下载花礼APP</p>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="fankui hovers">
+                        <div class="fankuis animation">
+                            <p class="pics1"></p>
+                            <a href="#">功能反馈</a>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- 底部 start -->
+    <footer class="common_footer_box container">
+        <div class="options">
+            <a href="">首页</a>|
+            <a href="">关于我们</a>|
+            <a href="">媒体报道</a>|
+            <a href="">联系方式</a>|
+            <a href="">企业团购</a>|
+            <a href="">花店入驻</a>|
+            <a href="">友情链接</a>|
+            <a href="">在线补款</a>|
+            <a href="">为什么选择中国鲜花礼品网</a>
+        </div>
+        <div class="ft_logo">
+            <img src="images/slogan.png" alt="">
+            <img src="images/100.jpg" alt="">
+            <img src="images/bico1.jpg" alt="">
+            <img src="images/govIcon.gif" alt="" height="50px">
+        </div>
+        <div class="permit">
+            <p>
+                <a href="">中国花卉协会会员</a>
+                <a href="">中国电子商务协会会员</a>
+                ICP经营许可证：
+                <a href="">粤B2-20050744</a> |
+                <a href="">粤ICP备09171662号</a>
+                粤公网安备44030502000373号 Copyright © 2005-2021
+            </p>
+            <p>
+                花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+            </p>
+        </div>
+    </footer>
+    <!-- 底部 end -->
+    <!-- 点击收藏弹出框 -->
+    <div class="mask"></div>
+    <div class="click_sc">
+        <p class="shop"><span class="left">收藏商品</span><span class="right">X</span></p>
+        <h3 class="fast_login">快捷登录注册</h3>
+        <a href="#">
+            <p class="yanzm"><span></span>手机验证码登录</p>
+        </a>
+        <form action="#">
+            <p class="phone_nub"><span class="phone_pic"></span>
+                <input type="text" id="number" placeholder="请输入手机号/邮箱">
+            </p>
+            <p class="pass"><span class="pasd_pic"></span>
+                <input type="password" id="pasd" placeholder="请输入密码">
+                <span class="wangjimima"><a href="#">忘记密码？</a></span>
+            </p>
+            <p class="btns"><input type="button" value="登录" id="btn"></p>
+        </form>
+        <ul>
+            <a href="#">
+                <li><span class="weixin"></span><span>微信</span></li>
+            </a>
+            <a href="#">
+                <li><span class="qq"></span><span></span>QQ</span></li>
+            </a>
+            <a href="#">
+                <li><span class="zhifub"></span><span></span>支付宝</span></li>
+            </a>
+            <a href="#">
+                <li><span class="email"></span><span></span>邮箱</span></li>
+            </a>
+        </ul>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div id="backs">返回顶部</div>
+
+
+</body>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/cakecity.js"></script>
+<script src="js/cake.js"></script>
+<script src="js/font-trans.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+</html>

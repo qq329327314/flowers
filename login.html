@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link rel="icon" type="image/x-icon" href="images/tit_logo.png"/>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <!-- 头部 start -->
+    <header class="common_head_box">
+        <div class="head_box container clearfix">
+            <!-- lt_nav -->
+            <ul class="lt_nav clearfix">
+                <li>
+                    <a href="#"><span class="head_icon"></span>收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>关注微信</a>
+                    <div class="menu">
+                        <img src="images/login_wxguanjia_qrcode.png" alt="">
+                        <p>
+                            扫码关注<br>
+                            回复“礼物”更多惊喜
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="head_icon"></span>花礼网app</a>
+                    <div class="menu">
+                        <img src="images/login_download_qrcode.png" alt="">
+                        <p>新人专属100元APP礼包</p>
+                    </div>
+                </li>
+            </ul>
+            <!-- rt_nav -->
+            <ul class="rt_nav clearfix">
+                <li>
+                    <a href="login.html" class="login">您好，请登录</a>
+                    <a href="enroll.html" class="register">注册</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="serve.html">订单查询</a>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="">我的花礼</a>
+                </li>
+                <li class="line">|</li>
+                <li class="customer_service">
+                    <a href="serve.html">客户服务<span class="triangle_icon"></span></a>
+                    <ul class="service_list">
+                        <li><a>在线付款</a></li>
+                        <li><a>帮助中心</a></li>
+                        <li><a>售后服务</a></li>
+                        <li><a>配送范围</a></li>
+                        <li><a>留言反馈</a></li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li class="shop_cart">
+                    <a href="showcart.html" class="shop_cart_link">购物车</a>
+                    <!-- 如果购物车没内容 那么display: black, elae--》display: none -->
+                    <ul class="empty_shop_list">
+                        <li class="empty">您的购物车中没有商品，先去选购把！</li>
+                    </ul>
+
+                    <!-- 购物车有内容时显示的列表 -->
+                    <ul class="shop_list">
+                        <li>
+                            <img src="images/pic16.jpg" alt="" class="lt">
+                            <p class="shop_introduce lt">
+                                韩式系列/初心不负— 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利1
+                            </p>
+                            <div class="count_box lt">
+                                <i class="cut">-</i>
+                                <span class="count">1</span>
+                                <i class="add">+</i>
+                            </div>
+                            <span class="price rt">￥239</span>
+                        </li>
+                        <li class="settlement">
+                            <span class="shop_count">1</span>件总计:<span class="total_price">￥239</span>
+                            <a href="showcart.html" class="goto_settlement rt">去购物车结算</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="line">|</li>
+                <li>
+                    <a href="#">中国鲜花礼品网：中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- 头部 end -->
+
+    <!-- 搜索区 start -->
+    <section class="common_search_box container">
+        <a href="index.html" class="huali_logo lt">
+            <img src="images/pc_hualogo.png" alt="">
+        </a>
+        <div class="search_box lt location">
+            <div class="user_search">
+                <form action="search.html">
+                    <input type="text" class="user_import lt" id="searchv" placeholder="商品关键词" autocomplete="off">
+
+                    <button class="search_btn lt">搜索</button>
+                </form>
+
+                <ul class="search_data_list">
+                    <!-- <li><a href=""></a></li>
+                    <li><a href=""></a></li> -->
+                </ul>
+                <ul id="ullist">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+
+            <p class="hot">
+                <a href="">红玫瑰</a>|<a href="">水生花</a>|<a href="">生日鲜花</a>|<a href="">金玫瑰</a>
+            </p>
+
+        </div>
+
+        <div class="rt_consult_box rt">
+            <span class="phone_consult"></span>
+            400-889-8188
+            <em class="line">|</em>
+            <a href="" class="on_line_service">
+                <i class="icon"></i>
+                在线客服
+            </a>
+        </div>
+    </section>
+    <!-- 搜索区 end -->
+    <!-- 全部商品导航 end -->
+
+    <!-- 登录窗口 -->
+    <section class="login-wrapper">
+         <span class="flower-hua"></span>
+        <div class="container"> 
+            <span class="flower-hong"></span>        
+            <div class="login-box">              
+                <ul class="login-tabs">
+                    <li id="login-border"><span class="line-left"></span>账号登录</li>
+                    <li id="login-wxBorder"><span class="line-right"></span>微信扫码登录</li>
+                </ul>
+
+                <!-- 账号登录 -->
+                <form action="index.html" class="login-call" id="loginShow">
+                    <p class="call"><i class="logo-call-01"></i><a href="#" id="callShow">手机验证码登录</a></p>
+                    <p><i class="user-logo"></i><input type="text" placeholder="请输入手机号码 / 邮箱" class="userName"
+                            id="user"></p>
+                    <p class="hint-user"><span></span></p>
+                    <p><i class="pwd-logo"></i><input type="password" placeholder="请输入密码" class="pwd" id="userPwd"></p>
+                    <p class="hint-pwd"><span></span></p>
+                    <p><button class="login-btn"  >登录</button></p>
+                    <p class="slip"><a href="#">忘记密码?</a></p>
+                </form>
+
+                <!-- 手机验证码登录 -->
+                <form action="index.html" class="login-call" style="display: none;" id="call-show">
+                    <p class="call"><i class="logo-call-02"></i><a href="#">账号密码登陆</a></p>
+                    <p><i class="user-logo"></i><input type="text" placeholder="请输入手机号码" class="userName" id="mycall">
+                    </p>
+                    <p class="call-user"><span></span></p>
+                    <p class="login-call-pwd"><i class="pwd-logo"></i><input type="text" placeholder="请输入短信验证码"
+                            id="call-code" class="pwd" style="width: 160px;"></p><input type="button" class="call-btn"
+                        value="获取验证码">
+                    <p class="call-pwd"><span></span></p>
+                    <p><button class="login-btn">登录</button></p>
+                    <p class="slip"><i></i> <a href="#">首次登陆将自动创建账号</a></p>
+                </form>
+
+                <!-- 微信扫码登录 -->
+                <form action="" class="login-wx" style="display: none;" id="wxShow">
+                    <div class="wxApp">
+                        <img src="images/login_tempqrpic.jpg" alt="">
+                        <p>微信扫码 快速登录 <i class="login-wx"></i></p>
+                    </div>
+                </form>
+                <ul class="else fixclear">
+                    <li>
+                        <i></i> <a href="http://hua.com/qq/Login"> QQ</a>
+                    </li>
+                    <li>
+                        <i></i> <a href="http://hua.com/Passport/Alipay/Login">支付宝</a>
+                    </li>
+                    <li class="loginR">
+                        <a href="enroll.html">注册账号</a> <i></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- 底部 start -->
+    <footer class="common_footer_box container">
+        <div class="options">
+            <a href="">首页</a>|
+            <a href="">关于我们</a>|
+            <a href="">媒体报道</a>|
+            <a href="">联系方式</a>|
+            <a href="">企业团购</a>|
+            <a href="">花店入驻</a>|
+            <a href="">友情链接</a>|
+            <a href="">在线补款</a>|
+            <a href="">为什么选择中国鲜花礼品网</a>
+        </div>
+        <div class="ft_logo">
+            <img src="images/slogan.png" alt="">
+            <img src="images/100.jpg" alt="">
+            <img src="images/bico1.jpg" alt="">
+            <img src="images/govIcon.gif" alt="" height="50px">
+        </div>
+        <div class="permit">
+            <p>
+                <a href="">中国花卉协会会员</a>
+                <a href="">中国电子商务协会会员</a>
+                ICP经营许可证：
+                <a href="">粤B2-20050744</a> |
+                <a href="">粤ICP备09171662号</a>
+                粤公网安备44030502000373号 Copyright © 2005-2021
+            </p>
+            <p>
+                花礼网 （中国鲜花礼品网） <a href="https://www.hua.com">www.hua.com</a> 深圳市百易信息技术有限公司 中国领先鲜花网品牌,爱情鲜花速递服务！
+            </p>
+        </div>
+    </footer>
+    <!-- 底部 end -->
+<script src="js/cookie.js"></script>
+
+</body>
+
+</html>

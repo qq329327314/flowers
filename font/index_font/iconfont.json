@@ -1,0 +1,114 @@
+{
+  "id": "2331483",
+  "name": "花礼网项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "825060",
+      "name": "手机",
+      "font_class": "shouji54",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "978987",
+      "name": "反馈意见",
+      "font_class": "fankuiyijian",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "3764006",
+      "name": "电话",
+      "font_class": "weibiaoti-",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3847401",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "6010920",
+      "name": "客服",
+      "font_class": "kefu1",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "10268929",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "13468927",
+      "name": "返回顶部",
+      "font_class": "fanhuidingbu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "16451271",
+      "name": "笔记",
+      "font_class": "biji",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "18311748",
+      "name": "电 话",
+      "font_class": "dianhua",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "1172721",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "1239930",
+      "name": "加载",
+      "font_class": "jiazai",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "1356587",
+      "name": "笑脸",
+      "font_class": "xiaolian-",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1916547",
+      "name": "图片",
+      "font_class": "image",
+      "unicode": "e7e0",
+      "unicode_decimal": 59360
+    },
+    {
+      "icon_id": "6185512",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "12184892",
+      "name": "笑脸",
+      "font_class": "xiaolian",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    }
+  ]
+}

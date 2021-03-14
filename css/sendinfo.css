@@ -1,0 +1,248 @@
+/* 公共部分 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #ff6a00;
+  text-decoration: underline;
+}
+.clear:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.section {
+  background: #f3f5f7;
+  padding: 30px 0;
+}
+.order {
+  width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.order .inform {
+  background: #fff0ec;
+  color: #ff6a00;
+  font-size: 12px;
+  padding: 0 40px;
+  line-height: 30px;
+}
+.order .inform a {
+  color: #ff6a00;
+  text-decoration: underline;
+}
+.order .inform span:nth-last-child(1) {
+  margin-left: 24px ;
+  color: #D3CDBF;
+}
+.order-content ul {
+  padding: 20px 40px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.order-content ul.order-pay {
+  border: none;
+}
+.order-content ul.message .message-limit {
+  position: relative;
+  right: 50px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #71797f;
+}
+.order-content ul.message li:nth-last-child(-n+2) {
+  float: left;
+  width: auto;
+}
+.order-content ul.message .message-right ul {
+  border: none;
+  padding: 0;
+}
+.order-content ul.message .message-right ul.message-right-section {
+  width: 500px;
+  height: 128px;
+  padding: 10px 18px 6px;
+  overflow-y: auto;
+  background: #f7f9fa;
+  display: none;
+}
+.order-content ul.message .message-right ul.active{
+  display: block;
+}
+.order-content ul.message .message-right ul.message-right-section li {
+  background: none;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  line-height: 18px;
+  margin: 5px 0;
+}
+.order-content ul.message .message-right li {
+  float: left;
+  width: 102px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 12px;
+  background: #e9ecf0;
+  border-radius: 2px;
+  margin: 0;
+  margin-right: 2px;
+}
+.order-content ul.message .message-right li.active {
+  border-top: 2px solid #ff6a00;
+  background: #f7f9fa;
+}
+.order-content ul.order-function {
+  font-size: 12px;
+}
+.order-content ul.order-function span {
+  margin-right: 10px;
+  color: #000000;
+}
+.order-content ul.order-function span.iconfont-checkout{
+  color: #ff6a00;
+}
+.order-content li {
+  margin-top: 10px;
+  line-height: 32px;
+  width: 450px;
+}
+.order-content li i {
+  float: right;
+  position: relative;
+  left: 290px;
+  color: #71797f;
+}
+.order-content li textarea {
+  padding: 16px;
+  width: 400px;
+  height: 145px;
+  border: 1px solid #d9d9d9;
+  resize: none;
+  font-size: 12px;
+  outline:none;
+}
+.order-content li textarea:focus {
+  border-color: #ff6a00;
+}
+.order-content li span {
+  color: #ff6a00;
+}
+.order-content li span.setEmail {
+  color: #71797f;
+  font-size: 12px;
+  margin-left: 147px;
+}
+.order-content li input {
+  border: 1px solid #d9d9d9;
+}
+.order-content li input:focus {
+  border-color: #ff6a00;
+}
+.order-content li input[type=text] {
+  float: right;
+  width: 300px;
+  line-height: 30px;
+  font-size: 12px;
+  text-indent: 1em;
+}
+.order-select {
+  float: right;
+}
+.order-select select {
+  width: 90px;
+  text-indent: 1em;
+  font-size: 12px;
+  margin: 0 2px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+.order-select select:last-child {
+  width: 102px;
+}
+.order-select select:focus {
+  border-color: #ff6a00;
+}
+.order-pay ul {
+  border: none;
+}
+.order-pay li {
+  width: auto;
+}
+.order-pay li p {
+  font-size: 12px;
+}
+.order-pay li p .pLeft {
+  color: #000000;
+  font-weight: bold;
+}
+.order-pay li p .pRight {
+  float: right;
+  color: #000000;
+}
+.order-pay li p .allprice {
+  color: #000000;
+  font-weight: bold;
+}
+.order-pay li div {
+  float: right;
+}
+.order-pay li div span {
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 30px;
+}
+.order-pay .pay-btn {
+  width: 200px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #ff734c;
+  border-radius: 27px;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.order-pay .showcart {
+  padding: 0;
+  background: #f7f9fa;
+  padding: 8px;
+}
+.order-pay .showcart img {
+  float: left;
+  width: 66px;
+  height: 72px;
+  margin-right: 20px;
+}
+.order-pay .showcart p:last-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+.order-pay .showcart p:last-child span {
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.order-pay .showcart li:first-child {
+  margin-top: 0;
+}
+.order-pay .showcart a:hover {
+  text-decoration: none;
+}
+.order-pay .showcart a {
+  float: left;
+}
+.order-pay .showcart span {
+  color: #000000;
+}

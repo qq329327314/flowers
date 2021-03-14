@@ -1,0 +1,314 @@
+/* 公共样式 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #6E767C;
+    text-decoration: none;
+}
+
+.fixclear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 登录窗口 */
+.login-wrapper {
+    width: 100%;
+    height: 474px;
+    background: url(../images/login_bg.jpg) no-repeat 50% 0;
+    background-size: cover;
+}
+
+.login-wrapper .container {
+    width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.login-wrapper .container .login-box {
+    position: relative;
+    height: 438px;
+    border-radius: 8px;
+    float: right;
+    background: #fff;
+    margin-top: 18px;
+    overflow: hidden;
+    width: 360px;
+}
+.login-box{
+    position: relative;
+}
+
+.login-box .login-tabs {
+    
+    background-size: 57px;
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid #E9ECF0;
+    padding: 0;
+    font-size: 0;
+}
+
+.login-box .login-tabs li {
+    /* float: left; */
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    line-height: 56px;
+    font-size: 18px;
+    text-align: center;
+    color: #232628;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.login-box .login-tabs li:hover{
+    color: #FF6A00;  
+    border-bottom: 2px solid #FF6A00;
+    width: 180px;
+}
+.login-call {
+    padding: 20px 24px 0;
+    min-height: 280px;
+
+}
+.login-call .call{
+    margin-left: 200px;
+}
+.login-call>p> .logo-call-01 {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url(../images/login_icon.png) no-repeat 0px 0px ;
+}
+
+.login-call>p>a {
+    font-size: 13px;
+    /* float: right; */
+}
+/* 手机注册 */
+.enroll-1{
+    background: url(../images/login_icon.png)no-repeat -88px -26px;
+    border: 1px solid #B4BABF;
+    width: 310px;
+    height: 35px;
+    
+}
+.enroll-call{
+    height: 30px;
+    width: 274px;
+  margin-left: 35px;
+  border: none;
+  font-size: 13px;
+  outline: none;
+}
+.enroll-2{
+    margin-top: 10px;
+    background: url(../images/login_icon.png)no-repeat 0px -26px;
+    border: 1px solid #B4BABF;
+    width: 310px;
+    height: 35px;
+}
+.enroll-get{
+    height: 35px;
+    width: 100px;
+    background: #E9ECF0;
+    outline: none;
+    border: none;
+    cursor: pointer
+}
+.enroll-note{
+    height: 30px;
+    width: 175px;
+  margin-left: 35px;
+  border: none;
+  font-size: 13px;
+  outline: none;
+}
+.enroll-3{
+    background: url(../images/login_icon.png)no-repeat -46px -26px;
+    border: 1px solid #B4BABF;
+    width: 310px;
+    height: 35px;
+    margin-top: 10px;
+
+}
+.enroll-pwd{
+    height: 30px;
+    width: 274px;
+  margin-left: 35px;
+  border: none;
+  font-size: 13px;
+  outline: none;
+}
+.enroll-btn{
+    margin-top: 20px;
+    color:#fff;
+    background: #FF734C;
+    width: 310px;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer
+}
+.hz-01{
+    height: 10px;
+    font-size: 12px;
+    color: #FF734C ;
+    display: inline-block;
+    
+}
+.hz-02{
+    height: 10px;
+    font-size: 12px;
+    color: #FF734C ;
+    display: inline-block;
+    
+}
+.hz-03{
+    height: 10px;
+    font-size: 12px;
+    color: #FF734C ;
+    display: inline-block;
+    
+}
+.hz-04{
+    height: 10px;
+    font-size: 12px;
+    color: #FF734C ;
+    display: inline-block;
+    
+}
+.hz-05{
+    height: 10px;
+    font-size: 12px;
+    color: #FF734C ;
+    display: inline-block;
+    
+}
+
+/* 邮箱注册 */
+.email-1{
+    background: url(../images/login_icon.png)no-repeat -130px -26px;
+    border: 1px solid #B4BABF;
+    width: 310px;
+    height: 35px;   
+}
+.email-2{
+    margin-top: 10px;
+    background: url(../images/login_icon.png)no-repeat -45px -26px;
+    border: 1px solid #B4BABF;
+    width: 310px;
+    height: 35px;  
+}
+.else{
+    background:#F7F9FA;
+    height: 50px;
+    margin-top: 35px;
+}
+.login-box .else>li>a{
+    font-size: 14px;
+  
+}
+.login-box .else>li {
+   
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.login-box .else>li:nth-child(1) i{
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    height: 20px;
+    background: url(../images/login_icon.png) no-repeat -30px -94px;
+}
+.login-box .else>li:nth-child(2) i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/login_icon.png) no-repeat -60px -94px;
+}
+.login-box .else .loginR{
+    margin-left: 88px;
+}
+.login-box .else>li:nth-child(3) i{
+   
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/login_icon.png) no-repeat 0px -62px;
+}.login-box .else>li:nth-child(3) a{
+    color: #FD884C;
+}
+/* 手机注册 */
+.call-btn{
+    width: 105px;
+    height: 42px;
+    /* margin-top: 14px; */
+    border: 1px solid #F7F9FA;
+    outline: none;
+    cursor: pointer
+}
+.login-call>p> .logo-call-02{
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url(../images/login_icon.png) no-repeat -25px 0px;
+}
+.slip>i{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/login_icon.png)no-repeat -50px -2px;
+}
+/* 微信扫码登录 */
+/* .wxApp{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.wxApp>p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.wxApp>p> .login-wx{
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background: url(../images/login_icon.png) no-repeat -73px 0px;
+} */
+.wxApp>img{
+    width: 150px;
+    height: 150px;
+    margin-top: 70px;
+}
+/* 跨域样式 */
+.location{
+    position: relative;
+}
+#ullist{
+    background: rgb(255, 255, 255);
+    width: 227px;
+    position: absolute;
+}
+#ullist li{
+    margin: 5px 0px;
+    cursor: pointer;
+    color: rgb(162, 162, 165);
+
+}
+#ullist li:hover{
+    background: #EEEEEE;
+    color: #636363;
+}
